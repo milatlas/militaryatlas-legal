@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Military Atlas — Legal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #f0f0f5; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+    .lang-bar { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; padding: 16px 24px; border-bottom: 1px solid #1c1c26; }
+    .lang-btn { padding: 5px 11px; border-radius: 6px; border: 1px solid #2a2a38; background: #13131a; color: #8888aa; font-size: 12px; font-weight: 500; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .lang-btn:hover { border-color: #3b8beb; color: #3b8beb; }
+    .lang-btn.active { border-color: #3b8beb; color: #3b8beb; background: #0f1e35; }
+    .container { max-width: 480px; width: 100%; padding: 48px 24px 64px; text-align: center; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .subtitle { color: #8888aa; font-size: 15px; margin-bottom: 40px; line-height: 1.5; }
+    .links { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+    a.link-card { display: block; padding: 16px 24px; background: #13131a; border: 1px solid #2a2a38; border-radius: 12px; color: #3b8beb; text-decoration: none; font-size: 16px; font-weight: 500; transition: border-color 0.2s; }
+    a.link-card:hover { border-color: #3b8beb; }
+    .contact-section { margin-top: 48px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    .contact-label { font-size: 11px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: #555566; }
+    .contact-desc { font-size: 14px; color: #8888aa; }
+    .contact-line { font-size: 15px; font-weight: 600; color: #f0f0f5; }
+    .contact-line a { color: #3b8beb; text-decoration: none; }
+    .contact-line a:hover { text-decoration: underline; }
+    .dev-name { font-size: 12px; color: #555566; margin-top: 2px; }
+  </style>
+</head>
+<body>
+  <div class="lang-bar" id="langBar">
+    <button class="lang-btn active" onclick="setLang('en')">English</button>
+    <button class="lang-btn" onclick="setLang('tr')">Türkçe</button>
+    <button class="lang-btn" onclick="setLang('de')">Deutsch</button>
+    <button class="lang-btn" onclick="setLang('fr')">Français</button>
+    <button class="lang-btn" onclick="setLang('es')">Español</button>
+    <button class="lang-btn" onclick="setLang('pt')">Português</button>
+    <button class="lang-btn" onclick="setLang('ru')">Русский</button>
+    <button class="lang-btn" onclick="setLang('ja')">日本語</button>
+    <button class="lang-btn" onclick="setLang('zh')">中文</button>
+  </div>
+
+  <div class="container">
+    <h1>Military Atlas</h1>
+    <p class="subtitle" id="subtitle"></p>
+    <div class="links">
+      <a class="link-card" href="privacy-policy.html" id="privacyLink"></a>
+      <a class="link-card" href="terms-of-service.html" id="termsLink"></a>
+    </div>
+    <div class="contact-section">
+      <div class="contact-label" id="contactLabel"></div>
+      <div class="contact-desc" id="contactDesc"></div>
+      <div class="contact-line">contact: <a href="mailto:militaryatlas.us@gmail.com">militaryatlas.us@gmail.com</a></div>
+      <div class="dev-name">Sibel Bıyık</div>
+    </div>
+  </div>
+
+  <script>
+    const t = {
+      en: { subtitle: "Legal documents for the Military Atlas mobile application.", privacy: "Privacy Policy", terms: "Terms of Service", contact: "Support", contactDesc: "For questions or app support:" },
+      tr: { subtitle: "Military Atlas mobil uygulamasına ait hukuki belgeler.", privacy: "Gizlilik Politikası", terms: "Kullanım Koşulları", contact: "Destek", contactDesc: "Soru veya destek için:" },
+      de: { subtitle: "Rechtsdokumente für die mobile App Military Atlas.", privacy: "Datenschutzrichtlinie", terms: "Nutzungsbedingungen", contact: "Support", contactDesc: "Bei Fragen oder für Support:" },
+      fr: { subtitle: "Documents légaux pour l'application mobile Military Atlas.", privacy: "Politique de confidentialité", terms: "Conditions d'utilisation", contact: "Assistance", contactDesc: "Pour toute question ou assistance :" },
+      es: { subtitle: "Documentos legales para la aplicación móvil Military Atlas.", privacy: "Política de privacidad", terms: "Términos de servicio", contact: "Soporte", contactDesc: "Para preguntas o soporte:" },
+      pt: { subtitle: "Documentos legais para o aplicativo móvel Military Atlas.", privacy: "Política de privacidade", terms: "Termos de serviço", contact: "Suporte", contactDesc: "Para dúvidas ou suporte:" },
+      ru: { subtitle: "Юридические документы для мобильного приложения Military Atlas.", privacy: "Политика конфиденциальности", terms: "Условия использования", contact: "Поддержка", contactDesc: "По вопросам или для поддержки:" },
+      ja: { subtitle: "Military Atlas モバイルアプリの法的文書。", privacy: "プライバシーポリシー", terms: "利用規約", contact: "サポート", contactDesc: "ご質問・サポートについて:" },
+      zh: { subtitle: "Military Atlas 移动应用程序的法律文件。", privacy: "隐私政策", terms: "服务条款", contact: "支持", contactDesc: "如有问题或需要支持，请联系:" }
+    };
+
+    function setLang(lang) {
+      const d = t[lang] || t.en;
+      document.getElementById('subtitle').textContent = d.subtitle;
+      document.getElementById('privacyLink').textContent = d.privacy;
+      document.getElementById('termsLink').textContent = d.terms;
+      document.getElementById('contactLabel').textContent = d.contact;
+      document.getElementById('contactDesc').textContent = d.contactDesc;
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
+      document.documentElement.lang = lang;
+      localStorage.setItem('milAtlasLang', lang);
+    }
+
+    const saved = localStorage.getItem('milAtlasLang') || navigator.language.slice(0, 2).toLowerCase();
+    setLang(t[saved] ? saved : 'en');
+  </script>
+</body>
+</html>
