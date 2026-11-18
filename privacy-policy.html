@@ -62,7 +62,7 @@
       <p>We do not require you to create an account. We do not collect your name, email address, phone number, or any other personally identifying information.</p>
       <p>Your <strong>watchlist</strong> (countries and equipment you save) is stored anonymously on our servers, linked only to a randomly generated device identifier — never to your identity.</p>
       <h3>2.2 Information Collected Automatically</h3>
-      <p><strong>Device Advertising Identifier (IDFA / Advertising ID)</strong><br>Only if you allow it (see Section 5 — Advertising), your device's advertising identifier is read by Google AdMob and shared with Google and its advertising partners so that ads can be personalized and measured. If you do not allow it, ads are shown without personalization. This identifier is a resettable, non-permanent ID assigned by your operating system. Pro and Founder users are not shown ads and are not asked for this permission.</p>
+      <p><strong>Device Advertising Identifier (IDFA / Advertising ID)</strong><br>Where permitted (see Section 5 — Advertising), your device's advertising identifier is read by Google AdMob and shared with Google and its advertising partners so that ads can be personalized and measured. On iOS this requires your permission; in the EEA, the United Kingdom and Switzerland it requires your consent; on Android elsewhere you can opt out in your device settings. Otherwise, ads are shown without personalization. This identifier is a resettable, non-permanent ID assigned by your operating system. Pro and Founder users are not shown ads and are not asked for this permission.</p>
       <p><strong>IP Address and Approximate Location</strong><br>Collected automatically by our cloud infrastructure (Firebase/Google) and by Google AdMob when the app makes network requests. AdMob may derive an approximate (coarse) location, such as country or city, from your IP address. Used for basic service operation and regional ad delivery.</p>
       <p><strong>App Usage Data</strong><br>Firebase collects anonymized usage data (e.g., which screens are visited, crash reports) to help us maintain and improve the app. This data is not linked to your identity.</p>
       <p><strong>Device and Ad Interaction Data</strong><br>When ads are shown, Google AdMob receives device and app information (e.g., device model, operating system version, app version, language) and ad interaction data (e.g., ad impressions and taps).</p>
@@ -81,7 +81,7 @@
       <h2>3. How We Use Your Information</h2>
       <table>
         <tr><th>Data</th><th>Purpose</th></tr>
-        <tr><td>Advertising ID (IDFA / Advertising ID), only with your permission</td><td>Serve and measure personalized advertisements</td></tr>
+        <tr><td>Advertising ID (IDFA / Advertising ID), where permitted (see Section 5)</td><td>Serve and measure personalized advertisements</td></tr>
         <tr><td>Device and app information, approximate location (from IP), ad interactions</td><td>Ad delivery and ad measurement</td></tr>
         <tr><td>IP address</td><td>Service delivery, regional content</td></tr>
         <tr><td>Anonymous device UID</td><td>Store your watchlist preferences</td></tr>
@@ -90,12 +90,12 @@
         <tr><td>FCM token</td><td>Watchlist push notifications</td></tr>
         <tr><td>Purchase status</td><td>Unlock premium features, remove ads</td></tr>
       </table>
-      <p>We do not sell your information to third parties for money. We do not use your information for purposes other than those listed above. If you allow personalized ads, your advertising identifier and related data are shared with Google and its advertising partners; under some US state privacy laws this may be considered "sharing" for targeted advertising (see Section 9).</p>
+      <p>We do not sell your information to third parties for money. We do not use your information for purposes other than those listed above. When ads are personalized, your advertising identifier and related data are shared with Google and its advertising partners; under some US state privacy laws this may be considered "sharing" for targeted advertising (see Section 9).</p>
       <h2>4. Third-Party Services</h2>
       <h3>Google Firebase</h3>
       <p>Used for anonymous authentication, cloud database (watchlist storage), push notifications, and app analytics.<br>Privacy policy: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
       <h3>Google AdMob</h3>
-      <p>Used to display advertisements within the app. AdMob collects your IP address (and an approximate location derived from it), device and app information, and ad interaction data. If you allow it, AdMob also collects your device advertising identifier, which is shared with Google and its advertising partners to personalize ads.<br>How Google uses this information: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Privacy policy: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>Used to display advertisements within the app. AdMob collects your IP address (and an approximate location derived from it), device and app information, and ad interaction data. Where permitted (see Section 5), AdMob also collects your device advertising identifier, which is shared with Google and its advertising partners to personalize ads.<br>How Google uses this information: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Privacy policy: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
       <h3>PostHog</h3>
       <p>Used for product analytics (US cloud). PostHog receives product usage events linked to your anonymous Firebase user ID. It does not receive your advertising identifier.<br>Privacy policy: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a></p>
       <h3>RevenueCat</h3>
@@ -105,7 +105,7 @@
       <h3>Apple (App Store / StoreKit)</h3>
       <p>All in-app purchases are processed by Apple.<br>Privacy policy: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
       <h2>5. Advertising, Consent and App Tracking Transparency</h2>
-      <p>By default, ads in Military Atlas are <strong>non-personalized</strong>. Ads are personalized only if you give permission as described below. Non-personalized ads are still selected using limited information such as approximate location and the app's content, and Google may use data for ad measurement and fraud prevention.</p>
+      <p>Military Atlas shows <strong>personalized ads</strong> through Google AdMob where the law and your choices allow it: on iOS only if you allow tracking, in the EEA, the United Kingdom and Switzerland only if you consent, and on Android elsewhere unless you opt out in your device settings. Ads that are not personalized are still selected using limited information such as approximate location and the app's content, and Google may use data for ad measurement and fraud prevention.</p>
       <h3>iOS: App Tracking Transparency</h3>
       <p>On <strong>iOS 14.5 and later</strong>, we request permission to use your device's advertising identifier under Apple's App Tracking Transparency (ATT) framework. A system prompt will appear asking:</p>
       <blockquote>"Military Atlas would like permission to track you across apps and websites owned by other companies."</blockquote>
@@ -114,10 +114,12 @@
         <li>If you <strong>decline</strong> tracking: you will still see ads, but they will not be personalized.</li>
       </ul>
       <p>You can change this preference at any time in:<br><strong>iOS Settings → Privacy &amp; Security → Tracking → Military Atlas</strong></p>
+      <h3>Android</h3>
+      <p>Outside the EEA, the United Kingdom and Switzerland, ads on Android may be personalized using your Android advertising ID without a separate prompt in the app. You can opt out of ad personalization or delete your advertising ID at any time in <strong>Android Settings → Privacy → Ads</strong> (the exact path may vary by device).</p>
       <h3>EEA, United Kingdom and Switzerland</h3>
       <p>If you are in the European Economic Area, the United Kingdom or Switzerland, you will see Google's consent form (Google User Messaging Platform, based on the IAB Transparency &amp; Consent Framework). If you do not give consent, only non-personalized or limited ads are shown.</p>
       <h3>Changing Your Choice</h3>
-      <p>You can review or change your ad privacy choices at any time in the app under <strong>Settings → Ad privacy preferences</strong>, and on iOS also under <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>.</p>
+      <p>In the EEA, the United Kingdom and Switzerland, you can review or change your consent at any time in the app under <strong>Settings → Ad privacy choices</strong>. On iOS you can change tracking under <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>; on Android, under <strong>Android Settings → Privacy → Ads</strong>.</p>
       <p><strong>Pro and Founder users</strong> do not see ads and are not asked for these permissions.</p>
       <h2>6. Data Retention</h2>
       <table>
@@ -139,14 +141,14 @@
         <li><strong>Access:</strong> Request a copy of data we hold about you</li>
         <li><strong>Deletion:</strong> Request deletion of your anonymous data</li>
         <li><strong>Portability:</strong> Request your data in a portable format</li>
-        <li><strong>Withdraw consent:</strong> Withdraw or change advertising consent at any time in Settings → Ad privacy preferences (see Section 5)</li>
+        <li><strong>Withdraw consent:</strong> Withdraw or change advertising consent at any time in Settings → Ad privacy choices (see Section 5)</li>
         <li><strong>Complaint:</strong> Lodge a complaint with your local data protection authority</li>
       </ul>
       <h3>California (CCPA)</h3>
       <ul>
         <li>Know what personal information is collected and how it is used</li>
         <li>Request deletion of your personal information</li>
-        <li>Opt out of the "sale" or "sharing" of personal information. We do not sell personal information for money. However, if you allow personalized ads, sharing your advertising identifier and related data with Google and its advertising partners may count as "sharing" for cross-context behavioral (targeted) advertising under the laws of California and some other US states. To opt out, decline or turn off tracking in iOS Settings → Privacy &amp; Security → Tracking, or change your choice in the app under Settings → Ad privacy preferences.</li>
+        <li>Opt out of the "sale" or "sharing" of personal information. We do not sell personal information for money. However, when ads are personalized, sharing your advertising identifier and related data with Google and its advertising partners may count as "sharing" for cross-context behavioral (targeted) advertising under the laws of California and some other US states. To opt out, decline or turn off tracking in iOS Settings → Privacy &amp; Security → Tracking, or on Android opt out of ad personalization or delete your advertising ID in Android Settings → Privacy → Ads.</li>
         <li>Non-discrimination for exercising your rights</li>
       </ul>
       <h3>All Users</h3>
@@ -154,7 +156,7 @@
         <li><strong>Delete your data in-app:</strong> Settings → Account → Delete My Data</li>
         <li><strong>Reset advertising ID:</strong> iOS Settings → Privacy &amp; Security → Tracking</li>
         <li><strong>Request data deletion by email:</strong> Contact us at the email below</li>
-        <li><strong>Ad privacy preferences:</strong> Settings → Ad privacy preferences in the app</li>
+        <li><strong>Ad privacy choices:</strong> iOS Settings → Privacy &amp; Security → Tracking; Android Settings → Privacy → Ads; in the EEA, the UK and Switzerland also Settings → Ad privacy choices in the app</li>
       </ul>
       <h2>10. Account Deletion &amp; Data Removal</h2>
       <p>Military Atlas automatically creates an anonymous account when you first open the app. No email address or personal identity is required or collected.</p>
@@ -191,7 +193,7 @@
       <p>Hesap oluşturmanız gerekmez. Adınızı, e-posta adresinizi, telefon numaranızı veya kişisel kimlik bilgilerinizi toplamıyoruz.</p>
       <p><strong>İzleme listeniz</strong> (kaydettiğiniz ülkeler ve ekipmanlar), yalnızca rastgele oluşturulmuş bir cihaz tanımlayıcısına bağlı olarak anonim şekilde sunucularımızda saklanır; kimliğinizle ilişkilendirilmez.</p>
       <h3>2.2 Otomatik Olarak Toplanan Bilgiler</h3>
-      <p><strong>Cihaz Reklam Tanımlayıcısı (IDFA / Advertising ID)</strong><br>Yalnızca izin verirseniz (bkz. Bölüm 5), cihazınızın reklam tanımlayıcısı Google AdMob tarafından okunur ve reklamların kişiselleştirilip ölçülebilmesi için Google ve reklam ortaklarıyla paylaşılır. İzin vermezseniz reklamlar kişiselleştirilmeden gösterilir. Bu, işletim sisteminizin atadığı, sıfırlanabilir ve kalıcı olmayan bir ID'dir. Pro ve Founder kullanıcılara reklam gösterilmez ve bu izin sorulmaz.</p>
+      <p><strong>Cihaz Reklam Tanımlayıcısı (IDFA / Advertising ID)</strong><br>İzin verilen durumlarda (bkz. Bölüm 5), cihazınızın reklam tanımlayıcısı Google AdMob tarafından okunur ve reklamların kişiselleştirilip ölçülebilmesi için Google ve reklam ortaklarıyla paylaşılır. iOS'ta bunun için izniniz, AEA, Birleşik Krallık ve İsviçre'de onayınız gerekir; diğer bölgelerde Android'de cihaz ayarlarınızdan vazgeçebilirsiniz. Aksi halde reklamlar kişiselleştirilmeden gösterilir. Bu, işletim sisteminizin atadığı, sıfırlanabilir ve kalıcı olmayan bir ID'dir. Pro ve Founder kullanıcılara reklam gösterilmez ve bu izin sorulmaz.</p>
       <p><strong>IP Adresi ve Yaklaşık Konum</strong><br>Bulut altyapımız (Firebase/Google) ve Google AdMob tarafından ağ istekleri sırasında otomatik olarak toplanır. AdMob, IP adresinizden ülke veya şehir gibi yaklaşık (kaba) bir konum türetebilir. Temel hizmet işlemleri ve bölgesel reklam sunumu için kullanılır.</p>
       <p><strong>Uygulama Kullanım Verileri</strong><br>Firebase, anonim kullanım verilerini toplar (ziyaret edilen ekranlar, kilitlenme raporları). Bu veriler kimliğinizle ilişkilendirilmez.</p>
       <p><strong>Cihaz ve Reklam Etkileşim Verileri</strong><br>Reklam gösterildiğinde Google AdMob cihaz ve uygulama bilgilerini (ör. cihaz modeli, işletim sistemi sürümü, uygulama sürümü, dil) ve reklam etkileşim verilerini (ör. reklam gösterimleri ve dokunmalar) alır.</p>
@@ -210,7 +212,7 @@
       <h2>3. Bilgilerinizi Nasıl Kullanıyoruz</h2>
       <table>
         <tr><th>Veri</th><th>Amaç</th></tr>
-        <tr><td>Reklam Kimliği (IDFA / Advertising ID), yalnızca izninizle</td><td>Kişiselleştirilmiş reklam sunmak ve ölçmek</td></tr>
+        <tr><td>Reklam Kimliği (IDFA / Advertising ID), izin verilen durumlarda (bkz. Bölüm 5)</td><td>Kişiselleştirilmiş reklam sunmak ve ölçmek</td></tr>
         <tr><td>Cihaz ve uygulama bilgileri, yaklaşık konum (IP'den), reklam etkileşimleri</td><td>Reklam sunumu ve ölçümü</td></tr>
         <tr><td>IP adresi</td><td>Hizmet sağlama, bölgesel içerik</td></tr>
         <tr><td>Anonim cihaz UID</td><td>İzleme listesi tercihlerini saklamak</td></tr>
@@ -219,12 +221,12 @@
         <tr><td>FCM tokeni</td><td>İzleme listesi bildirimleri</td></tr>
         <tr><td>Satın alma durumu</td><td>Premium özelliklerin kilidi açmak, reklamları kaldırmak</td></tr>
       </table>
-      <p>Bilgilerinizi üçüncü taraflara para karşılığında satmıyoruz. Kişiselleştirilmiş reklamlara izin verirseniz reklam tanımlayıcınız ve ilgili veriler Google ve reklam ortaklarıyla paylaşılır; bu, bazı ABD eyalet gizlilik yasalarında hedefli reklam amaçlı "paylaşım" (sharing) sayılabilir (bkz. Bölüm 9).</p>
+      <p>Bilgilerinizi üçüncü taraflara para karşılığında satmıyoruz. Reklamlar kişiselleştirildiğinde reklam tanımlayıcınız ve ilgili veriler Google ve reklam ortaklarıyla paylaşılır; bu, bazı ABD eyalet gizlilik yasalarında hedefli reklam amaçlı "paylaşım" (sharing) sayılabilir (bkz. Bölüm 9).</p>
       <h2>4. Üçüncü Taraf Hizmetler</h2>
       <h3>Google Firebase</h3>
       <p>Anonim kimlik doğrulama, bulut veritabanı, bildirimler ve analitik için kullanılır.<br>Gizlilik politikası: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
       <h3>Google AdMob</h3>
-      <p>Uygulama içinde reklam görüntülemek için kullanılır. AdMob IP adresinizi (ve bundan türetilen yaklaşık konumu), cihaz ve uygulama bilgilerini ve reklam etkileşim verilerini toplar. İzin verirseniz cihazınızın reklam tanımlayıcısını da toplar; bu tanımlayıcı reklamları kişiselleştirmek için Google ve reklam ortaklarıyla paylaşılır.<br>Google'ın bu bilgileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Gizlilik politikası: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>Uygulama içinde reklam görüntülemek için kullanılır. AdMob IP adresinizi (ve bundan türetilen yaklaşık konumu), cihaz ve uygulama bilgilerini ve reklam etkileşim verilerini toplar. İzin verilen durumlarda (bkz. Bölüm 5) cihazınızın reklam tanımlayıcısını da toplar; bu tanımlayıcı reklamları kişiselleştirmek için Google ve reklam ortaklarıyla paylaşılır.<br>Google'ın bu bilgileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Gizlilik politikası: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
       <h3>PostHog</h3>
       <p>Ürün analitiği için kullanılır (ABD bulutu). PostHog, anonim Firebase kullanıcı kimliğinizle ilişkilendirilmiş ürün kullanım olaylarını alır. Reklam tanımlayıcınızı almaz.<br>Gizlilik politikası: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a></p>
       <h3>RevenueCat</h3>
@@ -234,7 +236,7 @@
       <h3>Apple (App Store / StoreKit)</h3>
       <p>Tüm satın almalar Apple tarafından işlenir.<br>Gizlilik politikası: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
       <h2>5. Reklamcılık, Onay ve Uygulama İzleme Şeffaflığı</h2>
-      <p>Military Atlas'taki reklamlar varsayılan olarak <strong>kişiselleştirilmemiştir</strong>. Reklamlar yalnızca aşağıda açıklandığı şekilde izin verirseniz kişiselleştirilir. Kişiselleştirilmemiş reklamlar da yaklaşık konum ve uygulama içeriği gibi sınırlı bilgilerle seçilir; Google verileri reklam ölçümü ve dolandırıcılığı önleme için kullanabilir.</p>
+      <p>Military Atlas, yasanın ve tercihlerinizin izin verdiği durumlarda Google AdMob aracılığıyla <strong>kişiselleştirilmiş reklam</strong> gösterir: iOS'ta yalnızca izlemeye izin verirseniz, AEA, Birleşik Krallık ve İsviçre'de yalnızca onay verirseniz, diğer bölgelerde Android'de ise cihaz ayarlarınızdan vazgeçmediğiniz sürece. Kişiselleştirilmemiş reklamlar da yaklaşık konum ve uygulama içeriği gibi sınırlı bilgilerle seçilir; Google verileri reklam ölçümü ve dolandırıcılığı önleme için kullanabilir.</p>
       <h3>iOS: Uygulama İzleme Şeffaflığı</h3>
       <p><strong>iOS 14.5 ve sonrasında</strong>, Apple'ın ATT çerçevesi kapsamında reklam tanımlayıcınızı kullanmak için izin isteriz:</p>
       <blockquote>"Military Atlas, diğer şirketlerin uygulamalarında ve web sitelerinde sizi takip etmek için izninizi istiyor."</blockquote>
@@ -243,10 +245,12 @@
         <li><strong>Reddederseniz:</strong> reklam görmeye devam edersiniz ancak reklamlar kişiselleştirilmez.</li>
       </ul>
       <p>Bu tercihi şuradan değiştirebilirsiniz:<br><strong>iOS Ayarlar → Gizlilik ve Güvenlik → İzleme → Military Atlas</strong></p>
+      <h3>Android</h3>
+      <p>AEA, Birleşik Krallık ve İsviçre dışında Android'deki reklamlar, uygulamada ayrıca bir izin penceresi gösterilmeden Android reklam kimliğiniz kullanılarak kişiselleştirilebilir. Reklam kişiselleştirmesinden istediğiniz zaman vazgeçebilir veya reklam kimliğinizi <strong>Android Ayarlar → Gizlilik → Reklamlar</strong> bölümünden silebilirsiniz (yol cihaza göre değişebilir).</p>
       <h3>AEA, Birleşik Krallık ve İsviçre</h3>
       <p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'deyseniz Google'ın onay formu (IAB Şeffaflık ve Onay Çerçevesi'ne dayalı Google User Messaging Platform) gösterilir. Onay vermezseniz yalnızca kişiselleştirilmemiş veya sınırlı reklamlar sunulur.</p>
       <h3>Tercihinizi Değiştirme</h3>
-      <p>Reklam gizlilik tercihlerinizi istediğiniz zaman uygulamada <strong>Ayarlar → Reklam gizlilik tercihleri</strong> bölümünden, iOS'ta ayrıca <strong>iOS Ayarlar → Gizlilik ve Güvenlik → İzleme</strong> bölümünden görebilir ve değiştirebilirsiniz.</p>
+      <p>AEA, Birleşik Krallık ve İsviçre'de onayınızı istediğiniz zaman uygulamada <strong>Ayarlar → Reklam gizlilik tercihleri</strong> bölümünden görebilir ve değiştirebilirsiniz. iOS'ta izlemeyi <strong>iOS Ayarlar → Gizlilik ve Güvenlik → İzleme</strong>, Android'de <strong>Android Ayarlar → Gizlilik → Reklamlar</strong> bölümünden değiştirebilirsiniz.</p>
       <p><strong>Pro ve Founder kullanıcılara</strong> reklam gösterilmez ve bu izinler sorulmaz.</p>
       <h2>6. Veri Saklama</h2>
       <table>
@@ -275,7 +279,7 @@
       <ul>
         <li>Hangi kişisel bilgilerin toplandığını ve nasıl kullanıldığını öğrenmek</li>
         <li>Kişisel bilgilerinizin silinmesini talep etmek</li>
-        <li>Kişisel bilgilerin "satışından" veya "paylaşımından" vazgeçmek. Kişisel bilgileri para karşılığında satmıyoruz. Ancak kişiselleştirilmiş reklamlara izin verirseniz reklam tanımlayıcınızın ve ilgili verilerin Google ve reklam ortaklarıyla paylaşılması, Kaliforniya ve bazı diğer ABD eyaletlerinin yasalarında bağlamlar arası davranışsal (hedefli) reklam amaçlı "paylaşım" sayılabilir. Vazgeçmek için iOS Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden izlemeyi reddedin veya kapatın ya da uygulamada Ayarlar → Reklam gizlilik tercihleri bölümünden tercihinizi değiştirin.</li>
+        <li>Kişisel bilgilerin "satışından" veya "paylaşımından" vazgeçmek. Kişisel bilgileri para karşılığında satmıyoruz. Ancak reklamlar kişiselleştirildiğinde reklam tanımlayıcınızın ve ilgili verilerin Google ve reklam ortaklarıyla paylaşılması, Kaliforniya ve bazı diğer ABD eyaletlerinin yasalarında bağlamlar arası davranışsal (hedefli) reklam amaçlı "paylaşım" sayılabilir. Vazgeçmek için iOS Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden izlemeyi reddedin veya kapatın ya da Android'de Android Ayarlar → Gizlilik → Reklamlar bölümünden reklam kişiselleştirmesini kapatın veya reklam kimliğinizi silin.</li>
         <li>Haklarınızı kullandığınız için ayrımcılığa maruz kalmama</li>
       </ul>
       <h3>Tüm Kullanıcılar</h3>
@@ -283,7 +287,7 @@
         <li><strong>Uygulama içi veri silme:</strong> Ayarlar → Hesap → Verilerimi Sil</li>
         <li><strong>Reklam ID sıfırlama:</strong> iOS Ayarlar → Gizlilik ve Güvenlik → İzleme</li>
         <li><strong>E-posta ile veri silme talebi:</strong> Aşağıdaki e-posta adresiyle iletişime geçin</li>
-        <li><strong>Reklam gizlilik tercihleri:</strong> Uygulamada Ayarlar → Reklam gizlilik tercihleri</li>
+        <li><strong>Reklam gizlilik tercihleri:</strong> iOS Ayarlar → Gizlilik ve Güvenlik → İzleme; Android Ayarlar → Gizlilik → Reklamlar; AEA, Birleşik Krallık ve İsviçre'de ayrıca uygulamada Ayarlar → Reklam gizlilik tercihleri</li>
       </ul>
       <h2>10. Hesap Silme ve Veri Kaldırma</h2>
       <p>Military Atlas, uygulamayı ilk açtığınızda anonim bir hesap oluşturur. Hesap kaydı veya kişisel kimlik gerekmez.</p>
@@ -320,7 +324,7 @@
       <p>Wir verlangen keine Kontoerstellung. Wir erheben keine Namen, E-Mail-Adressen, Telefonnummern oder sonstige personenbezogene Daten.</p>
       <p>Ihre <strong>Merkliste</strong> (gespeicherte Länder und Ausrüstungen) wird anonym auf unseren Servern gespeichert – nur mit einer zufällig generierten Gerätekennung verknüpft.</p>
       <h3>2.2 Automatisch erfasste Daten</h3>
-      <p><strong>Werbe-ID (IDFA / Advertising ID)</strong><br>Nur wenn Sie zustimmen (siehe Abschnitt 5), wird die Werbe-ID Ihres Geräts von Google AdMob ausgelesen und mit Google und seinen Werbepartnern geteilt, damit Anzeigen personalisiert und gemessen werden können. Ohne Ihre Zustimmung werden Anzeigen ohne Personalisierung angezeigt. Diese ID wird von Ihrem Betriebssystem vergeben, ist zurücksetzbar und nicht dauerhaft. Pro- und Founder-Nutzern wird keine Werbung angezeigt; sie werden nicht um diese Erlaubnis gebeten.</p>
+      <p><strong>Werbe-ID (IDFA / Advertising ID)</strong><br>Soweit zulässig (siehe Abschnitt 5), wird die Werbe-ID Ihres Geräts von Google AdMob ausgelesen und mit Google und seinen Werbepartnern geteilt, damit Anzeigen personalisiert und gemessen werden können. Unter iOS ist dafür Ihre Erlaubnis erforderlich, im EWR, im Vereinigten Königreich und in der Schweiz Ihre Einwilligung; auf Android in anderen Regionen können Sie in den Geräteeinstellungen widersprechen. Andernfalls werden Anzeigen ohne Personalisierung angezeigt. Diese ID wird von Ihrem Betriebssystem vergeben, ist zurücksetzbar und nicht dauerhaft. Pro- und Founder-Nutzern wird keine Werbung angezeigt; sie werden nicht um diese Erlaubnis gebeten.</p>
       <p><strong>IP-Adresse und ungefährer Standort</strong><br>Wird bei Netzwerkanfragen automatisch von unserer Cloud-Infrastruktur (Firebase/Google) und von Google AdMob erfasst. AdMob kann aus Ihrer IP-Adresse einen ungefähren (groben) Standort wie Land oder Stadt ableiten. Verwendet für den grundlegenden Betrieb und die regionale Auslieferung von Werbung.</p>
       <p><strong>App-Nutzungsdaten</strong><br>Firebase erfasst anonymisierte Nutzungsdaten (besuchte Bildschirme, Absturzberichte). Diese Daten sind nicht mit Ihrer Identität verknüpft.</p>
       <p><strong>Geräte- und Werbeinteraktionsdaten</strong><br>Wenn Anzeigen ausgeliefert werden, erhält Google AdMob Geräte- und App-Informationen (z. B. Gerätemodell, Betriebssystemversion, App-Version, Sprache) sowie Daten zu Werbeinteraktionen (z. B. Anzeigenaufrufe und Tippen).</p>
@@ -339,7 +343,7 @@
       <h2>3. Verwendung Ihrer Daten</h2>
       <table>
         <tr><th>Daten</th><th>Zweck</th></tr>
-        <tr><td>Werbe-ID (IDFA / Advertising ID), nur mit Ihrer Zustimmung</td><td>Personalisierte Werbung ausliefern und messen</td></tr>
+        <tr><td>Werbe-ID (IDFA / Advertising ID), soweit zulässig (siehe Abschnitt 5)</td><td>Personalisierte Werbung ausliefern und messen</td></tr>
         <tr><td>Geräte- und App-Informationen, ungefährer Standort (aus IP), Werbeinteraktionen</td><td>Auslieferung und Messung von Werbung</td></tr>
         <tr><td>IP-Adresse</td><td>Diensterstellung, regionale Inhalte</td></tr>
         <tr><td>Anonyme Geräte-UID</td><td>Merkliste-Einstellungen speichern</td></tr>
@@ -348,12 +352,12 @@
         <tr><td>FCM-Token</td><td>Merkliste Push-Benachrichtigungen</td></tr>
         <tr><td>Kaufstatus</td><td>Premium-Funktionen freischalten, Werbung entfernen</td></tr>
       </table>
-      <p>Wir verkaufen Ihre Daten nicht gegen Geld an Dritte. Wenn Sie personalisierter Werbung zustimmen, werden Ihre Werbe-ID und zugehörige Daten mit Google und seinen Werbepartnern geteilt; nach einigen Datenschutzgesetzen von US-Bundesstaaten kann dies als „Sharing“ für zielgerichtete Werbung gelten (siehe Abschnitt 9).</p>
+      <p>Wir verkaufen Ihre Daten nicht gegen Geld an Dritte. Wenn Anzeigen personalisiert werden, werden Ihre Werbe-ID und zugehörige Daten mit Google und seinen Werbepartnern geteilt; nach einigen Datenschutzgesetzen von US-Bundesstaaten kann dies als „Sharing“ für zielgerichtete Werbung gelten (siehe Abschnitt 9).</p>
       <h2>4. Drittanbieterdienste</h2>
       <h3>Google Firebase</h3>
       <p>Anonyme Authentifizierung, Cloud-Datenbank, Benachrichtigungen und Analysen.<br>Datenschutz: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
       <h3>Google AdMob</h3>
-      <p>Werbeeinblendungen in der App. AdMob erfasst Ihre IP-Adresse (und einen daraus abgeleiteten ungefähren Standort), Geräte- und App-Informationen sowie Daten zu Werbeinteraktionen. Mit Ihrer Zustimmung erfasst AdMob zusätzlich die Werbe-ID Ihres Geräts, die zur Personalisierung von Anzeigen mit Google und seinen Werbepartnern geteilt wird.<br>Wie Google diese Daten verwendet: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Datenschutz: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>Werbeeinblendungen in der App. AdMob erfasst Ihre IP-Adresse (und einen daraus abgeleiteten ungefähren Standort), Geräte- und App-Informationen sowie Daten zu Werbeinteraktionen. Soweit zulässig (siehe Abschnitt 5), erfasst AdMob zusätzlich die Werbe-ID Ihres Geräts, die zur Personalisierung von Anzeigen mit Google und seinen Werbepartnern geteilt wird.<br>Wie Google diese Daten verwendet: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Datenschutz: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
       <h3>PostHog</h3>
       <p>Produktanalyse (US-Cloud). PostHog erhält Nutzungsereignisse, die mit Ihrer anonymen Firebase-Nutzer-ID verknüpft sind. Ihre Werbe-ID erhält PostHog nicht.<br>Datenschutz: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a></p>
       <h3>RevenueCat</h3>
@@ -363,7 +367,7 @@
       <h3>Apple (App Store / StoreKit)</h3>
       <p>Alle Käufe werden von Apple abgewickelt.<br>Datenschutz: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
       <h2>5. Werbung, Einwilligung und App-Tracking-Transparenz</h2>
-      <p>Standardmäßig ist die Werbung in Military Atlas <strong>nicht personalisiert</strong>. Anzeigen werden nur personalisiert, wenn Sie wie unten beschrieben zustimmen. Auch nicht personalisierte Anzeigen werden anhand begrenzter Informationen wie ungefährem Standort und App-Inhalt ausgewählt; Google kann Daten zur Anzeigenmessung und Betrugsprävention verwenden.</p>
+      <p>Military Atlas zeigt über Google AdMob <strong>personalisierte Werbung</strong>, soweit das Gesetz und Ihre Auswahl es zulassen: unter iOS nur, wenn Sie Tracking erlauben, im EWR, im Vereinigten Königreich und in der Schweiz nur mit Ihrer Einwilligung, und auf Android in anderen Regionen, sofern Sie nicht in den Geräteeinstellungen widersprechen. Auch nicht personalisierte Anzeigen werden anhand begrenzter Informationen wie ungefährem Standort und App-Inhalt ausgewählt; Google kann Daten zur Anzeigenmessung und Betrugsprävention verwenden.</p>
       <h3>iOS: App-Tracking-Transparenz</h3>
       <p>Auf <strong>iOS 14.5+</strong> fordern wir im Rahmen des ATT-Frameworks eine Genehmigung an:</p>
       <blockquote>"Military Atlas möchte Ihre Erlaubnis, Sie über Apps und Websites anderer Unternehmen zu verfolgen."</blockquote>
@@ -372,10 +376,12 @@
         <li><strong>Ablehnen:</strong> Sie sehen weiterhin Werbung, diese ist jedoch nicht personalisiert.</li>
       </ul>
       <p>Einstellung ändern: <strong>iOS Einstellungen → Datenschutz &amp; Sicherheit → Tracking → Military Atlas</strong></p>
+      <h3>Android</h3>
+      <p>Außerhalb des EWR, des Vereinigten Königreichs und der Schweiz können Anzeigen auf Android ohne gesonderte Abfrage in der App anhand Ihrer Android-Werbe-ID personalisiert werden. Sie können der Personalisierung jederzeit widersprechen oder Ihre Werbe-ID unter <strong>Android-Einstellungen → Datenschutz → Werbung</strong> löschen (der genaue Pfad kann je nach Gerät abweichen).</p>
       <h3>EWR, Vereinigtes Königreich und Schweiz</h3>
       <p>Wenn Sie sich im Europäischen Wirtschaftsraum, im Vereinigten Königreich oder in der Schweiz befinden, wird Ihnen das Einwilligungsformular von Google angezeigt (Google User Messaging Platform, basierend auf dem IAB Transparency &amp; Consent Framework). Ohne Ihre Einwilligung werden nur nicht personalisierte oder eingeschränkte Anzeigen ausgeliefert.</p>
       <h3>Auswahl ändern</h3>
-      <p>Sie können Ihre Werbe-Datenschutzeinstellungen jederzeit in der App unter <strong>Einstellungen → Werbe-Datenschutzeinstellungen</strong> und unter iOS zusätzlich unter <strong>iOS-Einstellungen → Datenschutz &amp; Sicherheit → Tracking</strong> prüfen oder ändern.</p>
+      <p>Im EWR, im Vereinigten Königreich und in der Schweiz können Sie Ihre Einwilligung jederzeit in der App unter <strong>Einstellungen → Datenschutz bei Werbung</strong> prüfen oder ändern. Unter iOS ändern Sie Tracking unter <strong>iOS-Einstellungen → Datenschutz &amp; Sicherheit → Tracking</strong>, auf Android unter <strong>Android-Einstellungen → Datenschutz → Werbung</strong>.</p>
       <p><strong>Pro- und Founder-Nutzern</strong> wird keine Werbung angezeigt; sie werden nicht um diese Erlaubnisse gebeten.</p>
       <h2>6. Datenspeicherung</h2>
       <table>
@@ -397,21 +403,21 @@
         <li><strong>Auskunft:</strong> Kopie der über Sie gespeicherten Daten anfordern</li>
         <li><strong>Löschung:</strong> Löschung Ihrer anonymen Daten beantragen</li>
         <li><strong>Portabilität:</strong> Daten in portablem Format anfordern</li>
-        <li><strong>Widerruf:</strong> Werbeeinwilligung jederzeit unter Einstellungen → Werbe-Datenschutzeinstellungen widerrufen oder ändern (siehe Abschnitt 5)</li>
+        <li><strong>Widerruf:</strong> Werbeeinwilligung jederzeit unter Einstellungen → Datenschutz bei Werbung widerrufen oder ändern (siehe Abschnitt 5)</li>
         <li><strong>Beschwerde:</strong> Beschwerde bei der zuständigen Datenschutzbehörde einreichen</li>
       </ul>
       <h3>Kalifornien (CCPA)</h3>
       <ul>
         <li>Auskunft über erhobene Daten und deren Nutzung</li>
         <li>Löschung personenbezogener Daten beantragen</li>
-        <li>Widerspruch gegen den „Verkauf“ oder das „Sharing“ personenbezogener Daten. Wir verkaufen keine personenbezogenen Daten gegen Geld. Wenn Sie personalisierter Werbung zustimmen, kann die Weitergabe Ihrer Werbe-ID und zugehöriger Daten an Google und seine Werbepartner jedoch nach dem Recht Kaliforniens und einiger anderer US-Bundesstaaten als „Sharing“ für kontextübergreifende verhaltensbasierte (zielgerichtete) Werbung gelten. Zum Widerspruch lehnen Sie Tracking unter iOS-Einstellungen → Datenschutz &amp; Sicherheit → Tracking ab bzw. deaktivieren es, oder ändern Sie Ihre Auswahl in der App unter Einstellungen → Werbe-Datenschutzeinstellungen.</li>
+        <li>Widerspruch gegen den „Verkauf“ oder das „Sharing“ personenbezogener Daten. Wir verkaufen keine personenbezogenen Daten gegen Geld. Wenn Anzeigen personalisiert werden, kann die Weitergabe Ihrer Werbe-ID und zugehöriger Daten an Google und seine Werbepartner jedoch nach dem Recht Kaliforniens und einiger anderer US-Bundesstaaten als „Sharing“ für kontextübergreifende verhaltensbasierte (zielgerichtete) Werbung gelten. Zum Widerspruch lehnen Sie Tracking unter iOS-Einstellungen → Datenschutz &amp; Sicherheit → Tracking ab bzw. deaktivieren es, oder deaktivieren Sie auf Android die Personalisierung bzw. löschen Sie Ihre Werbe-ID unter Android-Einstellungen → Datenschutz → Werbung.</li>
       </ul>
       <h3>Alle Nutzer</h3>
       <ul>
         <li><strong>Daten in der App löschen:</strong> Einstellungen → Konto → Meine Daten löschen</li>
         <li><strong>Werbe-ID zurücksetzen:</strong> iOS Einstellungen → Datenschutz &amp; Sicherheit → Tracking</li>
         <li><strong>Datenlöschung per E-Mail beantragen:</strong> Kontaktieren Sie uns unter der untenstehenden Adresse</li>
-        <li><strong>Werbe-Datenschutzeinstellungen:</strong> In der App unter Einstellungen → Werbe-Datenschutzeinstellungen</li>
+        <li><strong>Werbe-Datenschutz:</strong> iOS-Einstellungen → Datenschutz &amp; Sicherheit → Tracking; Android-Einstellungen → Datenschutz → Werbung; im EWR, im Vereinigten Königreich und in der Schweiz zusätzlich in der App unter Einstellungen → Datenschutz bei Werbung</li>
       </ul>
       <h2>10. Kontolöschung und Datenlöschung</h2>
       <p>Military Atlas erstellt beim ersten Start automatisch ein anonymes Konto. Sie können Ihre Daten jederzeit löschen.</p>
@@ -447,7 +453,7 @@
       <p>Nous n'exigeons pas la création d'un compte. Nous ne collectons ni votre nom, ni votre adresse e-mail, ni votre numéro de téléphone.</p>
       <p>Votre <strong>liste de surveillance</strong> est stockée anonymement sur nos serveurs, liée uniquement à un identifiant de périphérique généré aléatoirement.</p>
       <h3>2.2 Informations collectées automatiquement</h3>
-      <p><strong>Identifiant publicitaire (IDFA / Advertising ID)</strong><br>Uniquement si vous l'autorisez (voir section 5), l'identifiant publicitaire de votre appareil est lu par Google AdMob et partagé avec Google et ses partenaires publicitaires afin de personnaliser et de mesurer les publicités. Si vous ne l'autorisez pas, les publicités sont affichées sans personnalisation. Cet identifiant est attribué par votre système d'exploitation, réinitialisable et non permanent. Les utilisateurs Pro et Founder ne voient pas de publicités et cette autorisation ne leur est pas demandée.</p>
+      <p><strong>Identifiant publicitaire (IDFA / Advertising ID)</strong><br>Lorsque cela est autorisé (voir section 5), l'identifiant publicitaire de votre appareil est lu par Google AdMob et partagé avec Google et ses partenaires publicitaires afin de personnaliser et de mesurer les publicités. Sur iOS, votre autorisation est requise ; dans l'EEE, au Royaume-Uni et en Suisse, votre consentement est requis ; ailleurs sur Android, vous pouvez vous y opposer dans les paramètres de votre appareil. Sinon, les publicités sont affichées sans personnalisation. Cet identifiant est attribué par votre système d'exploitation, réinitialisable et non permanent. Les utilisateurs Pro et Founder ne voient pas de publicités et cette autorisation ne leur est pas demandée.</p>
       <p><strong>Adresse IP et localisation approximative</strong><br>Collectée automatiquement par notre infrastructure cloud (Firebase/Google) et par Google AdMob lors des requêtes réseau de l'application. AdMob peut déduire de votre adresse IP une localisation approximative (pays ou ville, par exemple). Utilisée pour le fonctionnement de base du service et la diffusion régionale des publicités.</p>
       <p><strong>Données d'utilisation</strong><br>Firebase collecte des données d'utilisation anonymisées (écrans visités, rapports de plantage). Ces données ne sont pas liées à votre identité.</p>
       <p><strong>Données sur l'appareil et les interactions publicitaires</strong><br>Lorsque des publicités sont affichées, Google AdMob reçoit des informations sur l'appareil et l'application (modèle, version du système, version de l'application, langue, par exemple) ainsi que des données d'interaction publicitaire (affichages et appuis, par exemple).</p>
@@ -466,7 +472,7 @@
       <h2>3. Utilisation de vos informations</h2>
       <table>
         <tr><th>Données</th><th>Finalité</th></tr>
-        <tr><td>Identifiant publicitaire (IDFA / Advertising ID), uniquement avec votre autorisation</td><td>Diffuser et mesurer des publicités personnalisées</td></tr>
+        <tr><td>Identifiant publicitaire (IDFA / Advertising ID), lorsque cela est autorisé (voir section 5)</td><td>Diffuser et mesurer des publicités personnalisées</td></tr>
         <tr><td>Informations sur l'appareil et l'application, localisation approximative (IP), interactions publicitaires</td><td>Diffusion et mesure des publicités</td></tr>
         <tr><td>Adresse IP</td><td>Fourniture du service, contenu régional</td></tr>
         <tr><td>UID de périphérique anonyme</td><td>Stocker les préférences de liste de surveillance</td></tr>
@@ -475,12 +481,12 @@
         <tr><td>Token FCM</td><td>Notifications push de la liste de surveillance</td></tr>
         <tr><td>Statut d'achat</td><td>Débloquer les fonctionnalités premium, supprimer les publicités</td></tr>
       </table>
-      <p>Nous ne vendons pas vos informations à des tiers contre de l'argent. Si vous autorisez les publicités personnalisées, votre identifiant publicitaire et les données associées sont partagés avec Google et ses partenaires publicitaires ; selon certaines lois d'États américains, cela peut être considéré comme un « partage » (sharing) à des fins de publicité ciblée (voir section 9).</p>
+      <p>Nous ne vendons pas vos informations à des tiers contre de l'argent. Lorsque les publicités sont personnalisées, votre identifiant publicitaire et les données associées sont partagés avec Google et ses partenaires publicitaires ; selon certaines lois d'États américains, cela peut être considéré comme un « partage » (sharing) à des fins de publicité ciblée (voir section 9).</p>
       <h2>4. Services tiers</h2>
       <h3>Google Firebase</h3>
       <p>Authentification anonyme, base de données cloud, notifications et analyses.<br>Politique : <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
       <h3>Google AdMob</h3>
-      <p>Affichage de publicités dans l'application. AdMob collecte votre adresse IP (et une localisation approximative qui en est déduite), des informations sur l'appareil et l'application et des données d'interaction publicitaire. Si vous l'autorisez, AdMob collecte également l'identifiant publicitaire de votre appareil, partagé avec Google et ses partenaires publicitaires pour personnaliser les publicités.<br>Utilisation de ces informations par Google : <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Politique : <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>Affichage de publicités dans l'application. AdMob collecte votre adresse IP (et une localisation approximative qui en est déduite), des informations sur l'appareil et l'application et des données d'interaction publicitaire. Lorsque cela est autorisé (voir section 5), AdMob collecte également l'identifiant publicitaire de votre appareil, partagé avec Google et ses partenaires publicitaires pour personnaliser les publicités.<br>Utilisation de ces informations par Google : <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Politique : <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
       <h3>PostHog</h3>
       <p>Analyse produit (cloud aux États-Unis). PostHog reçoit des événements d'utilisation associés à votre identifiant utilisateur Firebase anonyme. Il ne reçoit pas votre identifiant publicitaire.<br>Politique : <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a></p>
       <h3>RevenueCat</h3>
@@ -490,7 +496,7 @@
       <h3>Apple (App Store / StoreKit)</h3>
       <p>Tous les achats sont traités par Apple.<br>Politique : <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
       <h2>5. Publicité, consentement et transparence du suivi</h2>
-      <p>Par défaut, les publicités de Military Atlas sont <strong>non personnalisées</strong>. Elles ne sont personnalisées que si vous donnez votre autorisation comme décrit ci-dessous. Les publicités non personnalisées sont tout de même sélectionnées à l'aide d'informations limitées, comme la localisation approximative et le contenu de l'application, et Google peut utiliser des données pour la mesure publicitaire et la prévention de la fraude.</p>
+      <p>Military Atlas affiche des <strong>publicités personnalisées</strong> via Google AdMob lorsque la loi et vos choix le permettent : sur iOS uniquement si vous autorisez le suivi, dans l'EEE, au Royaume-Uni et en Suisse uniquement avec votre consentement, et ailleurs sur Android sauf si vous vous y opposez dans les paramètres de votre appareil. Les publicités non personnalisées sont tout de même sélectionnées à l'aide d'informations limitées, comme la localisation approximative et le contenu de l'application, et Google peut utiliser des données pour la mesure publicitaire et la prévention de la fraude.</p>
       <h3>iOS : transparence du suivi des apps</h3>
       <p>Sur <strong>iOS 14.5+</strong>, nous demandons l'autorisation dans le cadre du framework ATT d'Apple :</p>
       <blockquote>"Military Atlas souhaite votre autorisation pour vous suivre dans les apps et sites web d'autres entreprises."</blockquote>
@@ -499,10 +505,12 @@
         <li><strong>Refuser :</strong> vous verrez toujours des publicités, mais elles ne seront pas personnalisées.</li>
       </ul>
       <p>Modifier cette préférence : <strong>Réglages iOS → Confidentialité &amp; Sécurité → Suivi → Military Atlas</strong></p>
+      <h3>Android</h3>
+      <p>En dehors de l'EEE, du Royaume-Uni et de la Suisse, les publicités sur Android peuvent être personnalisées à l'aide de votre identifiant publicitaire Android, sans demande distincte dans l'application. Vous pouvez à tout moment refuser la personnalisation des annonces ou supprimer votre identifiant publicitaire dans <strong>Paramètres Android → Confidentialité → Annonces</strong> (le chemin exact peut varier selon l'appareil).</p>
       <h3>EEE, Royaume-Uni et Suisse</h3>
       <p>Si vous vous trouvez dans l'Espace économique européen, au Royaume-Uni ou en Suisse, le formulaire de consentement de Google vous sera présenté (Google User Messaging Platform, basé sur le IAB Transparency &amp; Consent Framework). Sans votre consentement, seules des publicités non personnalisées ou limitées sont diffusées.</p>
       <h3>Modifier votre choix</h3>
-      <p>Vous pouvez consulter ou modifier vos choix de confidentialité publicitaire à tout moment dans l'application sous <strong>Réglages → Préférences de confidentialité publicitaire</strong>, et sur iOS également sous <strong>Réglages iOS → Confidentialité et sécurité → Suivi</strong>.</p>
+      <p>Dans l'EEE, au Royaume-Uni et en Suisse, vous pouvez consulter ou modifier votre consentement à tout moment dans l'application sous <strong>Paramètres → Confidentialité des publicités</strong>. Sur iOS, modifiez le suivi sous <strong>Réglages iOS → Confidentialité et sécurité → Suivi</strong> ; sur Android, sous <strong>Paramètres Android → Confidentialité → Annonces</strong>.</p>
       <p>Les <strong>utilisateurs Pro et Founder</strong> ne voient pas de publicités et ces autorisations ne leur sont pas demandées.</p>
       <h2>6. Conservation des données</h2>
       <table>
@@ -524,21 +532,21 @@
         <li><strong>Accès :</strong> Demander une copie des données vous concernant</li>
         <li><strong>Suppression :</strong> Demander la suppression de vos données anonymes</li>
         <li><strong>Portabilité :</strong> Demander vos données dans un format portable</li>
-        <li><strong>Retrait du consentement :</strong> Retirer ou modifier le consentement publicitaire à tout moment dans Réglages → Préférences de confidentialité publicitaire (voir section 5)</li>
+        <li><strong>Retrait du consentement :</strong> Retirer ou modifier le consentement publicitaire à tout moment dans Paramètres → Confidentialité des publicités (voir section 5)</li>
         <li><strong>Plainte :</strong> Déposer une plainte auprès de votre autorité de protection des données</li>
       </ul>
       <h3>Californie (CCPA)</h3>
       <ul>
         <li>Connaître les informations collectées et leur utilisation</li>
         <li>Demander la suppression de vos informations personnelles</li>
-        <li>S'opposer à la « vente » ou au « partage » de données personnelles. Nous ne vendons pas de données personnelles contre de l'argent. Toutefois, si vous autorisez les publicités personnalisées, le partage de votre identifiant publicitaire et des données associées avec Google et ses partenaires publicitaires peut constituer un « partage » à des fins de publicité comportementale (ciblée) au sens des lois de la Californie et de certains autres États américains. Pour vous y opposer, refusez ou désactivez le suivi dans Réglages iOS → Confidentialité et sécurité → Suivi, ou modifiez votre choix dans l'application sous Réglages → Préférences de confidentialité publicitaire.</li>
+        <li>S'opposer à la « vente » ou au « partage » de données personnelles. Nous ne vendons pas de données personnelles contre de l'argent. Toutefois, lorsque les publicités sont personnalisées, le partage de votre identifiant publicitaire et des données associées avec Google et ses partenaires publicitaires peut constituer un « partage » à des fins de publicité comportementale (ciblée) au sens des lois de la Californie et de certains autres États américains. Pour vous y opposer, refusez ou désactivez le suivi dans Réglages iOS → Confidentialité et sécurité → Suivi, ou, sur Android, refusez la personnalisation des annonces ou supprimez votre identifiant publicitaire dans Paramètres Android → Confidentialité → Annonces.</li>
       </ul>
       <h3>Tous les utilisateurs</h3>
       <ul>
         <li><strong>Supprimer dans l'app :</strong> Paramètres → Compte → Supprimer mes données</li>
         <li><strong>Réinitialiser l'ID publicitaire :</strong> Réglages iOS → Confidentialité &amp; Sécurité → Suivi</li>
         <li><strong>Demande de suppression par e-mail :</strong> Contactez-nous à l'adresse ci-dessous</li>
-        <li><strong>Préférences de confidentialité publicitaire :</strong> Réglages → Préférences de confidentialité publicitaire dans l'application</li>
+        <li><strong>Choix de confidentialité publicitaire :</strong> Réglages iOS → Confidentialité et sécurité → Suivi ; Paramètres Android → Confidentialité → Annonces ; dans l'EEE, au Royaume-Uni et en Suisse, également Paramètres → Confidentialité des publicités dans l'application</li>
       </ul>
       <h2>10. Suppression du compte et des données</h2>
       <p>Military Atlas crée automatiquement un compte anonyme lors du premier lancement. Vous pouvez supprimer vos données à tout moment.</p>
@@ -574,7 +582,7 @@
       <p>No requerimos que crees una cuenta. No recopilamos tu nombre, dirección de correo electrónico, número de teléfono ni ninguna información de identificación personal.</p>
       <p>Tu <strong>lista de seguimiento</strong> se almacena de forma anónima en nuestros servidores, vinculada únicamente a un identificador de dispositivo generado aleatoriamente.</p>
       <h3>2.2 Información recopilada automáticamente</h3>
-      <p><strong>Identificador de publicidad (IDFA / Advertising ID)</strong><br>Solo si lo permites (ver sección 5), Google AdMob lee el identificador de publicidad de tu dispositivo y lo comparte con Google y sus socios publicitarios para personalizar y medir los anuncios. Si no lo permites, los anuncios se muestran sin personalización. Este identificador lo asigna tu sistema operativo, se puede restablecer y no es permanente. A los usuarios Pro y Founder no se les muestran anuncios ni se les pide este permiso.</p>
+      <p><strong>Identificador de publicidad (IDFA / Advertising ID)</strong><br>Cuando está permitido (ver sección 5), Google AdMob lee el identificador de publicidad de tu dispositivo y lo comparte con Google y sus socios publicitarios para personalizar y medir los anuncios. En iOS se requiere tu permiso; en el EEE, el Reino Unido y Suiza, tu consentimiento; en Android en otras regiones puedes excluirte en los ajustes del dispositivo. En caso contrario, los anuncios se muestran sin personalización. Este identificador lo asigna tu sistema operativo, se puede restablecer y no es permanente. A los usuarios Pro y Founder no se les muestran anuncios ni se les pide este permiso.</p>
       <p><strong>Dirección IP y ubicación aproximada</strong><br>Recopilada automáticamente por nuestra infraestructura en la nube (Firebase/Google) y por Google AdMob cuando la app realiza solicitudes de red. AdMob puede deducir de tu dirección IP una ubicación aproximada, como el país o la ciudad. Se usa para el funcionamiento básico del servicio y la entrega regional de anuncios.</p>
       <p><strong>Datos de uso</strong><br>Firebase recopila datos de uso anonimizados (pantallas visitadas, informes de fallos). No están vinculados a tu identidad.</p>
       <p><strong>Datos del dispositivo y de interacción con anuncios</strong><br>Cuando se muestran anuncios, Google AdMob recibe información del dispositivo y de la app (p. ej., modelo, versión del sistema operativo, versión de la app, idioma) y datos de interacción con anuncios (p. ej., impresiones y toques).</p>
@@ -593,7 +601,7 @@
       <h2>3. Cómo usamos tu información</h2>
       <table>
         <tr><th>Dato</th><th>Finalidad</th></tr>
-        <tr><td>Identificador de publicidad (IDFA / Advertising ID), solo con tu permiso</td><td>Mostrar y medir anuncios personalizados</td></tr>
+        <tr><td>Identificador de publicidad (IDFA / Advertising ID), cuando está permitido (ver sección 5)</td><td>Mostrar y medir anuncios personalizados</td></tr>
         <tr><td>Información del dispositivo y de la app, ubicación aproximada (por IP), interacciones con anuncios</td><td>Entrega y medición de anuncios</td></tr>
         <tr><td>Dirección IP</td><td>Entrega del servicio, contenido regional</td></tr>
         <tr><td>UID de dispositivo anónimo</td><td>Almacenar preferencias de lista de seguimiento</td></tr>
@@ -602,12 +610,12 @@
         <tr><td>Token FCM</td><td>Notificaciones push de la lista de seguimiento</td></tr>
         <tr><td>Estado de compra</td><td>Desbloquear funciones premium, eliminar anuncios</td></tr>
       </table>
-      <p>No vendemos tu información a terceros a cambio de dinero. Si permites los anuncios personalizados, tu identificador de publicidad y los datos relacionados se comparten con Google y sus socios publicitarios; según algunas leyes de privacidad de estados de EE. UU., esto puede considerarse «compartir» (sharing) con fines de publicidad dirigida (ver sección 9).</p>
+      <p>No vendemos tu información a terceros a cambio de dinero. Cuando los anuncios se personalizan, tu identificador de publicidad y los datos relacionados se comparten con Google y sus socios publicitarios; según algunas leyes de privacidad de estados de EE. UU., esto puede considerarse «compartir» (sharing) con fines de publicidad dirigida (ver sección 9).</p>
       <h2>4. Servicios de terceros</h2>
       <h3>Google Firebase</h3>
       <p>Autenticación anónima, base de datos en la nube, notificaciones y análisis.<br>Política: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
       <h3>Google AdMob</h3>
-      <p>Visualización de anuncios en la aplicación. AdMob recopila tu dirección IP (y una ubicación aproximada deducida de ella), información del dispositivo y de la app y datos de interacción con anuncios. Si lo permites, también recopila el identificador de publicidad de tu dispositivo, que se comparte con Google y sus socios publicitarios para personalizar los anuncios.<br>Cómo usa Google esta información: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Política: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>Visualización de anuncios en la aplicación. AdMob recopila tu dirección IP (y una ubicación aproximada deducida de ella), información del dispositivo y de la app y datos de interacción con anuncios. Cuando está permitido (ver sección 5), también recopila el identificador de publicidad de tu dispositivo, que se comparte con Google y sus socios publicitarios para personalizar los anuncios.<br>Cómo usa Google esta información: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Política: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
       <h3>PostHog</h3>
       <p>Analítica de producto (nube en EE. UU.). PostHog recibe eventos de uso vinculados a tu identificador de usuario anónimo de Firebase. No recibe tu identificador de publicidad.<br>Política: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a></p>
       <h3>RevenueCat</h3>
@@ -617,7 +625,7 @@
       <h3>Apple (App Store / StoreKit)</h3>
       <p>Todas las compras son procesadas por Apple.<br>Política: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
       <h2>5. Publicidad, consentimiento y transparencia del seguimiento</h2>
-      <p>De forma predeterminada, los anuncios de Military Atlas <strong>no están personalizados</strong>. Solo se personalizan si das tu permiso como se describe a continuación. Los anuncios no personalizados también se seleccionan con información limitada, como la ubicación aproximada y el contenido de la app, y Google puede usar datos para la medición de anuncios y la prevención del fraude.</p>
+      <p>Military Atlas muestra <strong>anuncios personalizados</strong> a través de Google AdMob cuando la ley y tus elecciones lo permiten: en iOS solo si permites el rastreo, en el EEE, el Reino Unido y Suiza solo con tu consentimiento, y en Android en otras regiones salvo que te excluyas en los ajustes del dispositivo. Los anuncios no personalizados también se seleccionan con información limitada, como la ubicación aproximada y el contenido de la app, y Google puede usar datos para la medición de anuncios y la prevención del fraude.</p>
       <h3>iOS: transparencia del seguimiento de apps</h3>
       <p>En <strong>iOS 14.5+</strong>, solicitamos permiso bajo el marco ATT de Apple:</p>
       <blockquote>"Military Atlas desea tu permiso para rastrearte en apps y sitios web de otras empresas."</blockquote>
@@ -626,10 +634,12 @@
         <li><strong>Si lo rechazas:</strong> seguirás viendo anuncios, pero no estarán personalizados.</li>
       </ul>
       <p>Cambia esta preferencia: <strong>Ajustes iOS → Privacidad y seguridad → Rastreo → Military Atlas</strong></p>
+      <h3>Android</h3>
+      <p>Fuera del EEE, el Reino Unido y Suiza, los anuncios en Android pueden personalizarse con tu ID de publicidad de Android sin una solicitud aparte en la app. Puedes desactivar la personalización de anuncios o eliminar tu ID de publicidad en cualquier momento en <strong>Ajustes de Android → Privacidad → Anuncios</strong> (la ruta exacta puede variar según el dispositivo).</p>
       <h3>EEE, Reino Unido y Suiza</h3>
       <p>Si te encuentras en el Espacio Económico Europeo, el Reino Unido o Suiza, verás el formulario de consentimiento de Google (Google User Messaging Platform, basado en el IAB Transparency &amp; Consent Framework). Si no das tu consentimiento, solo se muestran anuncios no personalizados o limitados.</p>
       <h3>Cambiar tu elección</h3>
-      <p>Puedes revisar o cambiar tus preferencias de privacidad publicitaria en cualquier momento en la app, en <strong>Ajustes → Preferencias de privacidad de anuncios</strong>, y en iOS también en <strong>Ajustes de iOS → Privacidad y seguridad → Rastreo</strong>.</p>
+      <p>En el EEE, el Reino Unido y Suiza, puedes revisar o cambiar tu consentimiento en cualquier momento en la app, en <strong>Ajustes → Privacidad de los anuncios</strong>. En iOS puedes cambiar el rastreo en <strong>Ajustes de iOS → Privacidad y seguridad → Rastreo</strong>; en Android, en <strong>Ajustes de Android → Privacidad → Anuncios</strong>.</p>
       <p>A los <strong>usuarios Pro y Founder</strong> no se les muestran anuncios ni se les piden estos permisos.</p>
       <h2>6. Retención de datos</h2>
       <table>
@@ -651,21 +661,21 @@
         <li><strong>Acceso:</strong> Solicitar una copia de los datos que tenemos sobre ti</li>
         <li><strong>Eliminación:</strong> Solicitar la eliminación de tus datos anónimos</li>
         <li><strong>Portabilidad:</strong> Solicitar tus datos en un formato portable</li>
-        <li><strong>Retirar consentimiento:</strong> Retirar o cambiar el consentimiento publicitario en cualquier momento en Ajustes → Preferencias de privacidad de anuncios (ver sección 5)</li>
+        <li><strong>Retirar consentimiento:</strong> Retirar o cambiar el consentimiento publicitario en cualquier momento en Ajustes → Privacidad de los anuncios (ver sección 5)</li>
         <li><strong>Reclamación:</strong> Presentar una reclamación ante tu autoridad de protección de datos</li>
       </ul>
       <h3>California (CCPA)</h3>
       <ul>
         <li>Conocer qué información personal se recopila y cómo se usa</li>
         <li>Solicitar la eliminación de tu información personal</li>
-        <li>Oponerse a la «venta» o al «compartir» de información personal. No vendemos información personal a cambio de dinero. Sin embargo, si permites los anuncios personalizados, compartir tu identificador de publicidad y los datos relacionados con Google y sus socios publicitarios puede considerarse «compartir» con fines de publicidad conductual (dirigida) según las leyes de California y de otros estados de EE. UU. Para oponerte, rechaza o desactiva el rastreo en Ajustes de iOS → Privacidad y seguridad → Rastreo, o cambia tu elección en la app en Ajustes → Preferencias de privacidad de anuncios.</li>
+        <li>Oponerse a la «venta» o al «compartir» de información personal. No vendemos información personal a cambio de dinero. Sin embargo, cuando los anuncios se personalizan, compartir tu identificador de publicidad y los datos relacionados con Google y sus socios publicitarios puede considerarse «compartir» con fines de publicidad conductual (dirigida) según las leyes de California y de otros estados de EE. UU. Para oponerte, rechaza o desactiva el rastreo en Ajustes de iOS → Privacidad y seguridad → Rastreo, o en Android desactiva la personalización de anuncios o elimina tu ID de publicidad en Ajustes de Android → Privacidad → Anuncios.</li>
       </ul>
       <h3>Todos los usuarios</h3>
       <ul>
         <li><strong>Eliminar en la app:</strong> Configuración → Cuenta → Eliminar mis datos</li>
         <li><strong>Restablecer ID publicitario:</strong> Ajustes iOS → Privacidad y seguridad → Rastreo</li>
         <li><strong>Solicitar eliminación por correo:</strong> Contáctanos en el correo a continuación</li>
-        <li><strong>Preferencias de privacidad de anuncios:</strong> Ajustes → Preferencias de privacidad de anuncios en la app</li>
+        <li><strong>Opciones de privacidad de anuncios:</strong> Ajustes de iOS → Privacidad y seguridad → Rastreo; Ajustes de Android → Privacidad → Anuncios; en el EEE, el Reino Unido y Suiza, también Ajustes → Privacidad de los anuncios en la app</li>
       </ul>
       <h2>10. Eliminación de cuenta y datos</h2>
       <p>Military Atlas crea automáticamente una cuenta anónima al primer inicio. Puedes eliminar tus datos en cualquier momento.</p>
@@ -701,7 +711,7 @@
       <p>Não exigimos criação de conta. Não coletamos seu nome, endereço de e-mail, número de telefone ou qualquer informação de identificação pessoal.</p>
       <p>Sua <strong>lista de observação</strong> é armazenada anonimamente em nossos servidores, vinculada apenas a um identificador de dispositivo gerado aleatoriamente.</p>
       <h3>2.2 Informações coletadas automaticamente</h3>
-      <p><strong>Identificador de publicidade (IDFA / Advertising ID)</strong><br>Somente se você permitir (veja a seção 5), o identificador de publicidade do seu dispositivo é lido pelo Google AdMob e compartilhado com o Google e seus parceiros de publicidade para que os anúncios possam ser personalizados e medidos. Se você não permitir, os anúncios são exibidos sem personalização. Esse identificador é atribuído pelo seu sistema operacional, pode ser redefinido e não é permanente. Usuários Pro e Founder não veem anúncios e não recebem esse pedido de permissão.</p>
+      <p><strong>Identificador de publicidade (IDFA / Advertising ID)</strong><br>Quando permitido (veja a seção 5), o identificador de publicidade do seu dispositivo é lido pelo Google AdMob e compartilhado com o Google e seus parceiros de publicidade para que os anúncios possam ser personalizados e medidos. No iOS, isso exige sua permissão; no EEE, no Reino Unido e na Suíça, seu consentimento; no Android em outras regiões, você pode desativar nas configurações do dispositivo. Caso contrário, os anúncios são exibidos sem personalização. Esse identificador é atribuído pelo seu sistema operacional, pode ser redefinido e não é permanente. Usuários Pro e Founder não veem anúncios e não recebem esse pedido de permissão.</p>
       <p><strong>Endereço IP e localização aproximada</strong><br>Coletado automaticamente pela nossa infraestrutura em nuvem (Firebase/Google) e pelo Google AdMob quando o app faz solicitações de rede. O AdMob pode derivar do seu endereço IP uma localização aproximada, como país ou cidade. Usado para o funcionamento básico do serviço e a entrega regional de anúncios.</p>
       <p><strong>Dados de uso</strong><br>O Firebase coleta dados de uso anonimizados (telas visitadas, relatórios de falhas). Não estão vinculados à sua identidade.</p>
       <p><strong>Dados do dispositivo e de interação com anúncios</strong><br>Quando anúncios são exibidos, o Google AdMob recebe informações do dispositivo e do app (por exemplo, modelo, versão do sistema operacional, versão do app, idioma) e dados de interação com anúncios (por exemplo, impressões e toques).</p>
@@ -720,7 +730,7 @@
       <h2>3. Como usamos suas informações</h2>
       <table>
         <tr><th>Dado</th><th>Finalidade</th></tr>
-        <tr><td>Identificador de publicidade (IDFA / Advertising ID), somente com sua permissão</td><td>Exibir e medir anúncios personalizados</td></tr>
+        <tr><td>Identificador de publicidade (IDFA / Advertising ID), quando permitido (veja a seção 5)</td><td>Exibir e medir anúncios personalizados</td></tr>
         <tr><td>Informações do dispositivo e do app, localização aproximada (por IP), interações com anúncios</td><td>Entrega e medição de anúncios</td></tr>
         <tr><td>Endereço IP</td><td>Entrega do serviço, conteúdo regional</td></tr>
         <tr><td>UID de dispositivo anônimo</td><td>Armazenar preferências da lista de observação</td></tr>
@@ -729,12 +739,12 @@
         <tr><td>Token FCM</td><td>Notificações push da lista de observação</td></tr>
         <tr><td>Status de compra</td><td>Desbloquear recursos premium, remover anúncios</td></tr>
       </table>
-      <p>Não vendemos suas informações a terceiros em troca de dinheiro. Se você permitir anúncios personalizados, seu identificador de publicidade e os dados relacionados são compartilhados com o Google e seus parceiros de publicidade; segundo algumas leis de privacidade de estados dos EUA, isso pode ser considerado "compartilhamento" (sharing) para publicidade direcionada (veja a seção 9).</p>
+      <p>Não vendemos suas informações a terceiros em troca de dinheiro. Quando os anúncios são personalizados, seu identificador de publicidade e os dados relacionados são compartilhados com o Google e seus parceiros de publicidade; segundo algumas leis de privacidade de estados dos EUA, isso pode ser considerado "compartilhamento" (sharing) para publicidade direcionada (veja a seção 9).</p>
       <h2>4. Serviços de terceiros</h2>
       <h3>Google Firebase</h3>
       <p>Autenticação anônima, banco de dados em nuvem, notificações e análises.<br>Política: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
       <h3>Google AdMob</h3>
-      <p>Exibição de anúncios no aplicativo. O AdMob coleta seu endereço IP (e uma localização aproximada derivada dele), informações do dispositivo e do app e dados de interação com anúncios. Se você permitir, também coleta o identificador de publicidade do seu dispositivo, que é compartilhado com o Google e seus parceiros de publicidade para personalizar anúncios.<br>Como o Google usa essas informações: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Política: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>Exibição de anúncios no aplicativo. O AdMob coleta seu endereço IP (e uma localização aproximada derivada dele), informações do dispositivo e do app e dados de interação com anúncios. Quando permitido (veja a seção 5), também coleta o identificador de publicidade do seu dispositivo, que é compartilhado com o Google e seus parceiros de publicidade para personalizar anúncios.<br>Como o Google usa essas informações: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Política: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
       <h3>PostHog</h3>
       <p>Análise de produto (nuvem nos EUA). O PostHog recebe eventos de uso vinculados ao seu identificador de usuário anônimo do Firebase. Ele não recebe seu identificador de publicidade.<br>Política: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a></p>
       <h3>RevenueCat</h3>
@@ -744,7 +754,7 @@
       <h3>Apple (App Store / StoreKit)</h3>
       <p>Todas as compras são processadas pela Apple.<br>Política: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
       <h2>5. Publicidade, consentimento e transparência de rastreamento</h2>
-      <p>Por padrão, os anúncios no Military Atlas <strong>não são personalizados</strong>. Eles só são personalizados se você der permissão, conforme descrito abaixo. Anúncios não personalizados ainda são selecionados com informações limitadas, como localização aproximada e o conteúdo do app, e o Google pode usar dados para medição de anúncios e prevenção de fraudes.</p>
+      <p>O Military Atlas exibe <strong>anúncios personalizados</strong> pelo Google AdMob quando a lei e suas escolhas permitem: no iOS somente se você permitir o rastreamento, no EEE, no Reino Unido e na Suíça somente com seu consentimento, e no Android em outras regiões, a menos que você desative nas configurações do dispositivo. Anúncios não personalizados ainda são selecionados com informações limitadas, como localização aproximada e o conteúdo do app, e o Google pode usar dados para medição de anúncios e prevenção de fraudes.</p>
       <h3>iOS: transparência de rastreamento de apps</h3>
       <p>No <strong>iOS 14.5+</strong>, solicitamos permissão sob o framework ATT da Apple:</p>
       <blockquote>"Military Atlas deseja sua permissão para rastreá-lo em apps e sites de outras empresas."</blockquote>
@@ -753,10 +763,12 @@
         <li><strong>Se você recusar:</strong> continuará vendo anúncios, mas eles não serão personalizados.</li>
       </ul>
       <p>Altere em: <strong>Ajustes iOS → Privacidade e segurança → Rastreamento → Military Atlas</strong></p>
+      <h3>Android</h3>
+      <p>Fora do EEE, do Reino Unido e da Suíça, os anúncios no Android podem ser personalizados com seu ID de publicidade do Android, sem um pedido separado no app. Você pode desativar a personalização de anúncios ou excluir seu ID de publicidade a qualquer momento em <strong>Configurações do Android → Privacidade → Anúncios</strong> (o caminho exato pode variar conforme o dispositivo).</p>
       <h3>EEE, Reino Unido e Suíça</h3>
       <p>Se você estiver no Espaço Econômico Europeu, no Reino Unido ou na Suíça, verá o formulário de consentimento do Google (Google User Messaging Platform, baseado no IAB Transparency &amp; Consent Framework). Se você não der consentimento, apenas anúncios não personalizados ou limitados serão exibidos.</p>
       <h3>Alterar sua escolha</h3>
-      <p>Você pode revisar ou alterar suas preferências de privacidade de anúncios a qualquer momento no app, em <strong>Ajustes → Preferências de privacidade de anúncios</strong>, e no iOS também em <strong>Ajustes do iOS → Privacidade e Segurança → Rastreamento</strong>.</p>
+      <p>No EEE, no Reino Unido e na Suíça, você pode revisar ou alterar seu consentimento a qualquer momento no app, em <strong>Configurações → Privacidade dos anúncios</strong>. No iOS, altere o rastreamento em <strong>Ajustes do iOS → Privacidade e Segurança → Rastreamento</strong>; no Android, em <strong>Configurações do Android → Privacidade → Anúncios</strong>.</p>
       <p><strong>Usuários Pro e Founder</strong> não veem anúncios e não recebem esses pedidos de permissão.</p>
       <h2>6. Retenção de dados</h2>
       <table>
@@ -778,21 +790,21 @@
         <li><strong>Acesso:</strong> Solicitar uma cópia dos dados que temos sobre você</li>
         <li><strong>Exclusão:</strong> Solicitar a exclusão dos seus dados anônimos</li>
         <li><strong>Portabilidade:</strong> Solicitar seus dados em formato portátil</li>
-        <li><strong>Retirar consentimento:</strong> Retirar ou alterar o consentimento publicitário a qualquer momento em Ajustes → Preferências de privacidade de anúncios (veja a seção 5)</li>
+        <li><strong>Retirar consentimento:</strong> Retirar ou alterar o consentimento publicitário a qualquer momento em Configurações → Privacidade dos anúncios (veja a seção 5)</li>
         <li><strong>Reclamação:</strong> Apresentar reclamação à sua autoridade de proteção de dados</li>
       </ul>
       <h3>Califórnia (CCPA)</h3>
       <ul>
         <li>Conhecer as informações coletadas e como são usadas</li>
         <li>Solicitar a exclusão de suas informações pessoais</li>
-        <li>Opor-se à "venda" ou ao "compartilhamento" de dados pessoais. Não vendemos dados pessoais em troca de dinheiro. No entanto, se você permitir anúncios personalizados, o compartilhamento do seu identificador de publicidade e dos dados relacionados com o Google e seus parceiros de publicidade pode ser considerado "compartilhamento" para publicidade comportamental (direcionada) segundo as leis da Califórnia e de alguns outros estados dos EUA. Para se opor, recuse ou desative o rastreamento em Ajustes do iOS → Privacidade e Segurança → Rastreamento, ou altere sua escolha no app em Ajustes → Preferências de privacidade de anúncios.</li>
+        <li>Opor-se à "venda" ou ao "compartilhamento" de dados pessoais. Não vendemos dados pessoais em troca de dinheiro. No entanto, quando os anúncios são personalizados, o compartilhamento do seu identificador de publicidade e dos dados relacionados com o Google e seus parceiros de publicidade pode ser considerado "compartilhamento" para publicidade comportamental (direcionada) segundo as leis da Califórnia e de alguns outros estados dos EUA. Para se opor, recuse ou desative o rastreamento em Ajustes do iOS → Privacidade e Segurança → Rastreamento, ou no Android desative a personalização de anúncios ou exclua seu ID de publicidade em Configurações do Android → Privacidade → Anúncios.</li>
       </ul>
       <h3>Todos os usuários</h3>
       <ul>
         <li><strong>Excluir no app:</strong> Configurações → Conta → Excluir meus dados</li>
         <li><strong>Redefinir ID de publicidade:</strong> Ajustes iOS → Privacidade e segurança → Rastreamento</li>
         <li><strong>Solicitar exclusão por e-mail:</strong> Entre em contato conosco no endereço abaixo</li>
-        <li><strong>Preferências de privacidade de anúncios:</strong> Ajustes → Preferências de privacidade de anúncios no app</li>
+        <li><strong>Escolhas de privacidade de anúncios:</strong> Ajustes do iOS → Privacidade e Segurança → Rastreamento; Configurações do Android → Privacidade → Anúncios; no EEE, no Reino Unido e na Suíça, também Configurações → Privacidade dos anúncios no app</li>
       </ul>
       <h2>10. Exclusão de conta e dados</h2>
       <p>Military Atlas cria automaticamente uma conta anônima no primeiro lançamento. Você pode excluir seus dados a qualquer momento.</p>
@@ -828,7 +840,7 @@
       <p>Создание учётной записи не требуется. Мы не собираем ваше имя, адрес электронной почты, номер телефона или иную идентифицирующую информацию.</p>
       <p>Ваш <strong>список наблюдения</strong> хранится анонимно на наших серверах, связанный только со случайно сгенерированным идентификатором устройства.</p>
       <h3>2.2 Автоматически собираемые данные</h3>
-      <p><strong>Идентификатор рекламы (IDFA / Advertising ID)</strong><br>Только с вашего разрешения (см. раздел 5) рекламный идентификатор вашего устройства считывается Google AdMob и передаётся Google и его рекламным партнёрам, чтобы рекламу можно было персонализировать и измерять. Без разрешения реклама показывается без персонализации. Этот идентификатор назначается операционной системой, может быть сброшен и не является постоянным. Пользователям Pro и Founder реклама не показывается, и это разрешение у них не запрашивается.</p>
+      <p><strong>Идентификатор рекламы (IDFA / Advertising ID)</strong><br>Там, где это допускается (см. раздел 5), рекламный идентификатор вашего устройства считывается Google AdMob и передаётся Google и его рекламным партнёрам, чтобы рекламу можно было персонализировать и измерять. На iOS для этого требуется ваше разрешение; в ЕЭЗ, Великобритании и Швейцарии — ваше согласие; на Android в других регионах вы можете отказаться в настройках устройства. В остальных случаях реклама показывается без персонализации. Этот идентификатор назначается операционной системой, может быть сброшен и не является постоянным. Пользователям Pro и Founder реклама не показывается, и это разрешение у них не запрашивается.</p>
       <p><strong>IP-адрес и приблизительное местоположение</strong><br>Автоматически собирается нашей облачной инфраструктурой (Firebase/Google) и Google AdMob при сетевых запросах приложения. AdMob может определить по IP-адресу приблизительное местоположение, например страну или город. Используется для базовой работы сервиса и показа региональной рекламы.</p>
       <p><strong>Данные об использовании приложения</strong><br>Firebase собирает анонимные данные об использовании (посещённые экраны, отчёты о сбоях). Эти данные не связаны с вашей личностью.</p>
       <p><strong>Данные об устройстве и взаимодействии с рекламой</strong><br>При показе рекламы Google AdMob получает сведения об устройстве и приложении (например, модель устройства, версия ОС, версия приложения, язык) и данные о взаимодействии с рекламой (например, показы и нажатия).</p>
@@ -847,7 +859,7 @@
       <h2>3. Использование данных</h2>
       <table>
         <tr><th>Данные</th><th>Цель</th></tr>
-        <tr><td>Идентификатор рекламы (IDFA / Advertising ID), только с вашего разрешения</td><td>Показ и измерение персонализированной рекламы</td></tr>
+        <tr><td>Идентификатор рекламы (IDFA / Advertising ID), там, где это допускается (см. раздел 5)</td><td>Показ и измерение персонализированной рекламы</td></tr>
         <tr><td>Сведения об устройстве и приложении, приблизительное местоположение (по IP), взаимодействие с рекламой</td><td>Показ и измерение рекламы</td></tr>
         <tr><td>IP-адрес</td><td>Предоставление сервиса, региональный контент</td></tr>
         <tr><td>Анонимный UID устройства</td><td>Хранение списка наблюдения</td></tr>
@@ -856,12 +868,12 @@
         <tr><td>FCM-токен</td><td>Push-уведомления списка наблюдения</td></tr>
         <tr><td>Статус покупки</td><td>Разблокировка premium-функций, отключение рекламы</td></tr>
       </table>
-      <p>Мы не продаём ваши данные третьим лицам за деньги. Если вы разрешите персонализированную рекламу, ваш рекламный идентификатор и связанные данные передаются Google и его рекламным партнёрам; по законам о конфиденциальности некоторых штатов США это может считаться «передачей» (sharing) для таргетированной рекламы (см. раздел 9).</p>
+      <p>Мы не продаём ваши данные третьим лицам за деньги. Когда реклама персонализируется, ваш рекламный идентификатор и связанные данные передаются Google и его рекламным партнёрам; по законам о конфиденциальности некоторых штатов США это может считаться «передачей» (sharing) для таргетированной рекламы (см. раздел 9).</p>
       <h2>4. Сторонние сервисы</h2>
       <h3>Google Firebase</h3>
       <p>Анонимная аутентификация, облачная база данных, уведомления и аналитика.<br>Политика: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
       <h3>Google AdMob</h3>
-      <p>Показ рекламы в приложении. AdMob собирает ваш IP-адрес (и определённое по нему приблизительное местоположение), сведения об устройстве и приложении и данные о взаимодействии с рекламой. С вашего разрешения AdMob также собирает рекламный идентификатор устройства, который передаётся Google и его рекламным партнёрам для персонализации рекламы.<br>Как Google использует эти данные: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Политика: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>Показ рекламы в приложении. AdMob собирает ваш IP-адрес (и определённое по нему приблизительное местоположение), сведения об устройстве и приложении и данные о взаимодействии с рекламой. Там, где это допускается (см. раздел 5), AdMob также собирает рекламный идентификатор устройства, который передаётся Google и его рекламным партнёрам для персонализации рекламы.<br>Как Google использует эти данные: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>Политика: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
       <h3>PostHog</h3>
       <p>Продуктовая аналитика (облако в США). PostHog получает события использования, связанные с вашим анонимным идентификатором пользователя Firebase. Рекламный идентификатор PostHog не получает.<br>Политика: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a></p>
       <h3>RevenueCat</h3>
@@ -871,7 +883,7 @@
       <h3>Apple (App Store / StoreKit)</h3>
       <p>Все покупки обрабатываются Apple.<br>Политика: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
       <h2>5. Реклама, согласие и прозрачность отслеживания</h2>
-      <p>По умолчанию реклама в Military Atlas <strong>не персонализирована</strong>. Она персонализируется только с вашего разрешения, как описано ниже. Неперсонализированная реклама также подбирается с использованием ограниченных данных, например приблизительного местоположения и содержимого приложения, а Google может использовать данные для измерения рекламы и предотвращения мошенничества.</p>
+      <p>Military Atlas показывает <strong>персонализированную рекламу</strong> через Google AdMob там, где это допускают закон и ваш выбор: на iOS — только если вы разрешите отслеживание, в ЕЭЗ, Великобритании и Швейцарии — только с вашего согласия, на Android в других регионах — если вы не отказались в настройках устройства. Неперсонализированная реклама также подбирается с использованием ограниченных данных, например приблизительного местоположения и содержимого приложения, а Google может использовать данные для измерения рекламы и предотвращения мошенничества.</p>
       <h3>iOS: прозрачность отслеживания приложений</h3>
       <p>На <strong>iOS 14.5+</strong> мы запрашиваем разрешение в рамках ATT-фреймворка Apple:</p>
       <blockquote>«Military Atlas запрашивает разрешение на отслеживание вас в приложениях и на веб-сайтах других компаний.»</blockquote>
@@ -880,10 +892,12 @@
         <li><strong>Если вы откажетесь:</strong> реклама будет показываться, но без персонализации.</li>
       </ul>
       <p>Изменить настройку: <strong>Настройки iOS → Конфиденциальность и безопасность → Отслеживание → Military Atlas</strong></p>
+      <h3>Android</h3>
+      <p>За пределами ЕЭЗ, Великобритании и Швейцарии реклама на Android может персонализироваться с использованием рекламного идентификатора Android без отдельного запроса в приложении. Вы можете в любое время отказаться от персонализации рекламы или удалить рекламный идентификатор в <strong>Настройки Android → Конфиденциальность → Реклама</strong> (точный путь может отличаться в зависимости от устройства).</p>
       <h3>ЕЭЗ, Великобритания и Швейцария</h3>
       <p>Если вы находитесь в Европейской экономической зоне, Великобритании или Швейцарии, вам будет показана форма согласия Google (Google User Messaging Platform на основе IAB Transparency &amp; Consent Framework). Без вашего согласия показывается только неперсонализированная или ограниченная реклама.</p>
       <h3>Изменение выбора</h3>
-      <p>Вы можете в любое время просмотреть или изменить настройки конфиденциальности рекламы в приложении: <strong>Настройки → Настройки конфиденциальности рекламы</strong>, а на iOS также в <strong>Настройки iOS → Конфиденциальность и безопасность → Отслеживание</strong>.</p>
+      <p>В ЕЭЗ, Великобритании и Швейцарии вы можете в любое время просмотреть или изменить своё согласие в приложении: <strong>Настройки → Конфиденциальность рекламы</strong>. На iOS отслеживание меняется в <strong>Настройки iOS → Конфиденциальность и безопасность → Отслеживание</strong>, на Android — в <strong>Настройки Android → Конфиденциальность → Реклама</strong>.</p>
       <p><strong>Пользователям Pro и Founder</strong> реклама не показывается, и эти разрешения у них не запрашиваются.</p>
       <h2>6. Хранение данных</h2>
       <table>
@@ -905,21 +919,21 @@
         <li><strong>Доступ:</strong> Запрос копии ваших данных</li>
         <li><strong>Удаление:</strong> Запрос удаления анонимных данных</li>
         <li><strong>Переносимость:</strong> Запрос данных в портативном формате</li>
-        <li><strong>Отзыв согласия:</strong> Отозвать или изменить согласие на рекламу можно в любое время в разделе Настройки → Настройки конфиденциальности рекламы (см. раздел 5)</li>
+        <li><strong>Отзыв согласия:</strong> Отозвать или изменить согласие на рекламу можно в любое время в разделе Настройки → Конфиденциальность рекламы (см. раздел 5)</li>
         <li><strong>Жалоба:</strong> Подача жалобы в орган защиты данных</li>
       </ul>
       <h3>Калифорния (CCPA)</h3>
       <ul>
         <li>Получение информации о собираемых данных и их использовании</li>
         <li>Запрос удаления персональных данных</li>
-        <li>Отказ от «продажи» или «передачи» персональных данных. Мы не продаём персональные данные за деньги. Однако если вы разрешите персонализированную рекламу, передача рекламного идентификатора и связанных данных Google и его рекламным партнёрам может считаться «передачей» (sharing) для межконтекстной поведенческой (таргетированной) рекламы по законам Калифорнии и некоторых других штатов США. Чтобы отказаться, запретите или отключите отслеживание в Настройки iOS → Конфиденциальность и безопасность → Отслеживание либо измените выбор в приложении в разделе Настройки → Настройки конфиденциальности рекламы.</li>
+        <li>Отказ от «продажи» или «передачи» персональных данных. Мы не продаём персональные данные за деньги. Однако когда реклама персонализируется, передача рекламного идентификатора и связанных данных Google и его рекламным партнёрам может считаться «передачей» (sharing) для межконтекстной поведенческой (таргетированной) рекламы по законам Калифорнии и некоторых других штатов США. Чтобы отказаться, запретите или отключите отслеживание в Настройки iOS → Конфиденциальность и безопасность → Отслеживание либо на Android отключите персонализацию рекламы или удалите рекламный идентификатор в Настройки Android → Конфиденциальность → Реклама.</li>
       </ul>
       <h3>Все пользователи</h3>
       <ul>
         <li><strong>Удаление в приложении:</strong> Настройки → Аккаунт → Удалить мои данные</li>
         <li><strong>Сброс рекламного идентификатора:</strong> Настройки iOS → Конфиденциальность → Отслеживание</li>
         <li><strong>Запрос удаления по email:</strong> Свяжитесь с нами по адресу ниже</li>
-        <li><strong>Настройки конфиденциальности рекламы:</strong> Настройки → Настройки конфиденциальности рекламы в приложении</li>
+        <li><strong>Настройки конфиденциальности рекламы:</strong> Настройки iOS → Конфиденциальность и безопасность → Отслеживание; Настройки Android → Конфиденциальность → Реклама; в ЕЭЗ, Великобритании и Швейцарии также Настройки → Конфиденциальность рекламы в приложении</li>
       </ul>
       <h2>10. Удаление аккаунта и данных</h2>
       <p>Military Atlas создаёт анонимный аккаунт при первом запуске. Вы можете удалить данные в любое время.</p>
@@ -955,7 +969,7 @@
       <p>アカウントの作成は不要です。氏名、メールアドレス、電話番号、その他の個人識別情報は収集しません。</p>
       <p><strong>ウォッチリスト</strong>（保存した国や装備）は、ランダムに生成されたデバイス識別子のみに紐づけられた形で、匿名でサーバーに保存されます。</p>
       <h3>2.2 自動的に収集される情報</h3>
-      <p><strong>デバイス広告識別子（IDFA / Advertising ID）</strong><br>お客様が許可した場合に限り（セクション5参照）、デバイスの広告識別子がGoogle AdMobによって読み取られ、広告のパーソナライズと効果測定のためにGoogleおよびその広告パートナーと共有されます。許可しない場合、広告はパーソナライズされずに表示されます。この識別子はOSが割り当てる、リセット可能で永続的ではないIDです。ProおよびFounderユーザーには広告が表示されず、この許可も求められません。</p>
+      <p><strong>デバイス広告識別子（IDFA / Advertising ID）</strong><br>認められる場合（セクション5参照）、デバイスの広告識別子がGoogle AdMobによって読み取られ、広告のパーソナライズと効果測定のためにGoogleおよびその広告パートナーと共有されます。iOSではお客様の許可が、EEA・英国・スイスではお客様の同意が必要です。その他の地域のAndroidでは、端末の設定でオプトアウトできます。それ以外の場合、広告はパーソナライズされずに表示されます。この識別子はOSが割り当てる、リセット可能で永続的ではないIDです。ProおよびFounderユーザーには広告が表示されず、この許可も求められません。</p>
       <p><strong>IPアドレスとおおよその位置情報</strong><br>アプリのネットワーク通信時に、クラウドインフラ（Firebase/Google）およびGoogle AdMobによって自動的に収集されます。AdMobはIPアドレスから国や都市などのおおよその位置情報を推定する場合があります。基本的なサービス運用と地域別の広告配信に使用されます。</p>
       <p><strong>アプリ使用データ</strong><br>Firebaseが匿名化された使用データ（訪問画面、クラッシュレポート等）を収集します。お客様の個人情報とは紐づきません。</p>
       <p><strong>デバイス情報と広告インタラクションデータ</strong><br>広告が表示される際、Google AdMobはデバイスおよびアプリの情報（例：機種、OSバージョン、アプリバージョン、言語）と広告インタラクションデータ（例：広告の表示回数やタップ）を受け取ります。</p>
@@ -974,7 +988,7 @@
       <h2>3. 情報の使用方法</h2>
       <table>
         <tr><th>データ</th><th>目的</th></tr>
-        <tr><td>広告識別子（IDFA / Advertising ID）、許可した場合のみ</td><td>パーソナライズド広告の配信と効果測定</td></tr>
+        <tr><td>広告識別子（IDFA / Advertising ID）、認められる場合（セクション5参照）</td><td>パーソナライズド広告の配信と効果測定</td></tr>
         <tr><td>デバイス・アプリ情報、おおよその位置情報（IPから）、広告インタラクション</td><td>広告の配信と効果測定</td></tr>
         <tr><td>IPアドレス</td><td>サービス提供、地域別コンテンツ</td></tr>
         <tr><td>匿名デバイスUID</td><td>ウォッチリスト設定の保存</td></tr>
@@ -983,12 +997,12 @@
         <tr><td>FCMトークン</td><td>ウォッチリストのプッシュ通知</td></tr>
         <tr><td>購入状況</td><td>プレミアム機能のアンロック、広告の削除</td></tr>
       </table>
-      <p>お客様の情報を金銭と引き換えに第三者に販売することはありません。パーソナライズド広告を許可した場合、広告識別子および関連データはGoogleおよびその広告パートナーと共有されます。米国の一部の州のプライバシー法では、これがターゲティング広告のための「共有」（sharing）とみなされる場合があります（セクション9参照）。</p>
+      <p>お客様の情報を金銭と引き換えに第三者に販売することはありません。広告がパーソナライズされる場合、広告識別子および関連データはGoogleおよびその広告パートナーと共有されます。米国の一部の州のプライバシー法では、これがターゲティング広告のための「共有」（sharing）とみなされる場合があります（セクション9参照）。</p>
       <h2>4. 第三者サービス</h2>
       <h3>Google Firebase</h3>
       <p>匿名認証、クラウドデータベース、通知、分析に使用。<br>プライバシー: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
       <h3>Google AdMob</h3>
-      <p>アプリ内広告の表示に使用。AdMobはIPアドレス（およびそこから推定されるおおよその位置情報）、デバイス・アプリ情報、広告インタラクションデータを収集します。お客様が許可した場合は、デバイスの広告識別子も収集し、広告のパーソナライズのためにGoogleおよびその広告パートナーと共有します。<br>Googleによる情報の利用方法: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>プライバシー: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>アプリ内広告の表示に使用。AdMobはIPアドレス（およびそこから推定されるおおよその位置情報）、デバイス・アプリ情報、広告インタラクションデータを収集します。認められる場合（セクション5参照）、デバイスの広告識別子も収集し、広告のパーソナライズのためにGoogleおよびその広告パートナーと共有します。<br>Googleによる情報の利用方法: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>プライバシー: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
       <h3>PostHog</h3>
       <p>製品分析に使用（米国クラウド）。PostHogは、匿名のFirebaseユーザーIDに関連付けられた利用イベントを受け取ります。広告識別子は受け取りません。<br>プライバシー: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a></p>
       <h3>RevenueCat</h3>
@@ -998,7 +1012,7 @@
       <h3>Apple (App Store / StoreKit)</h3>
       <p>すべての購入はAppleが処理します。<br>プライバシー: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
       <h2>5. 広告、同意、アプリトラッキングの透明性</h2>
-      <p>Military Atlasの広告は、初期設定では<strong>パーソナライズされていません</strong>。以下のとおりお客様が許可した場合にのみパーソナライズされます。パーソナライズされていない広告も、おおよその位置情報やアプリの内容などの限られた情報に基づいて選ばれ、Googleは広告の効果測定や不正防止のためにデータを使用する場合があります。</p>
+      <p>Military Atlasは、法律とお客様の選択が認める範囲で、Google AdMobを通じて<strong>パーソナライズド広告</strong>を表示します。iOSではトラッキングを許可した場合のみ、EEA・英国・スイスでは同意した場合のみ、その他の地域のAndroidでは端末の設定でオプトアウトしない限り、広告がパーソナライズされます。パーソナライズされていない広告も、おおよその位置情報やアプリの内容などの限られた情報に基づいて選ばれ、Googleは広告の効果測定や不正防止のためにデータを使用する場合があります。</p>
       <h3>iOS：アプリトラッキングの透明性</h3>
       <p><strong>iOS 14.5以降</strong>では、AppleのATTフレームワークに基づき許可を求めます：</p>
       <blockquote>「Military Atlasが他社のAppやWebサイトでのアクティビティをトラッキングする許可を求めています。」</blockquote>
@@ -1007,10 +1021,12 @@
         <li><strong>拒否した場合：</strong>広告は引き続き表示されますが、パーソナライズされません。</li>
       </ul>
       <p>設定変更：<strong>iOSの設定 → プライバシーとセキュリティ → トラッキング → Military Atlas</strong></p>
+      <h3>Android</h3>
+      <p>EEA・英国・スイス以外では、Androidの広告は、アプリ内で個別の確認を表示することなく、Androidの広告IDを使用してパーソナライズされる場合があります。<strong>Androidの設定 → プライバシー → 広告</strong>から、いつでも広告のパーソナライズをオプトアウトしたり、広告IDを削除したりできます（正確な場所は端末により異なる場合があります）。</p>
       <h3>EEA、英国、スイス</h3>
       <p>欧州経済領域（EEA）、英国、スイスにいる場合は、Googleの同意フォーム（IAB Transparency &amp; Consent Frameworkに基づくGoogle User Messaging Platform）が表示されます。同意しない場合は、パーソナライズされていない広告または制限付きの広告のみが表示されます。</p>
       <h3>選択の変更</h3>
-      <p>広告のプライバシー設定は、アプリの<strong>設定 → 広告のプライバシー設定</strong>からいつでも確認・変更できます。iOSでは<strong>iOSの設定 → プライバシーとセキュリティ → トラッキング</strong>からも変更できます。</p>
+      <p>EEA・英国・スイスでは、アプリの<strong>設定 → 広告のプライバシー設定</strong>からいつでも同意を確認・変更できます。iOSでは<strong>iOSの設定 → プライバシーとセキュリティ → トラッキング</strong>、Androidでは<strong>Androidの設定 → プライバシー → 広告</strong>から変更できます。</p>
       <p><strong>ProおよびFounderユーザー</strong>には広告が表示されず、これらの許可も求められません。</p>
       <h2>6. データ保持期間</h2>
       <table>
@@ -1039,14 +1055,14 @@
       <ul>
         <li>収集される個人情報とその使用方法の確認</li>
         <li>個人情報の削除要求</li>
-        <li>個人情報の「販売」または「共有」の拒否。当社は個人情報を金銭と引き換えに販売していません。ただし、パーソナライズド広告を許可した場合、広告識別子および関連データをGoogleおよびその広告パートナーと共有することは、カリフォルニア州および米国の一部の州の法律上、クロスコンテキスト行動ターゲティング広告のための「共有」とみなされる場合があります。拒否するには、iOSの設定 → プライバシーとセキュリティ → トラッキングでトラッキングを拒否またはオフにするか、アプリの設定 → 広告のプライバシー設定で選択を変更してください。</li>
+        <li>個人情報の「販売」または「共有」の拒否。当社は個人情報を金銭と引き換えに販売していません。ただし、広告がパーソナライズされる場合、広告識別子および関連データをGoogleおよびその広告パートナーと共有することは、カリフォルニア州および米国の一部の州の法律上、クロスコンテキスト行動ターゲティング広告のための「共有」とみなされる場合があります。拒否するには、iOSの設定 → プライバシーとセキュリティ → トラッキングでトラッキングを拒否またはオフにするか、AndroidではAndroidの設定 → プライバシー → 広告で広告のパーソナライズをオプトアウトするか広告IDを削除してください。</li>
       </ul>
       <h3>全ユーザー</h3>
       <ul>
         <li><strong>アプリ内でデータ削除：</strong>設定 → アカウント → データを削除</li>
         <li><strong>広告IDリセット：</strong>iOSの設定 → プライバシーとセキュリティ → トラッキング</li>
         <li><strong>メールによる削除依頼：</strong>下記アドレスにご連絡ください</li>
-        <li><strong>広告のプライバシー設定：</strong>アプリの設定 → 広告のプライバシー設定</li>
+        <li><strong>広告のプライバシー設定：</strong>iOSの設定 → プライバシーとセキュリティ → トラッキング、Androidの設定 → プライバシー → 広告、EEA・英国・スイスではアプリの設定 → 広告のプライバシー設定も利用できます</li>
       </ul>
       <h2>10. アカウントとデータの削除</h2>
       <p>Military Atlasは初回起動時に匿名アカウントを作成します。いつでもデータを削除できます。</p>
@@ -1082,7 +1098,7 @@
       <p>我们不要求创建账户。我们不收集您的姓名、电子邮件地址、电话号码或任何其他个人身份信息。</p>
       <p>您的<strong>关注列表</strong>（保存的国家和装备）以匿名方式存储在我们的服务器上，仅与随机生成的设备标识符关联。</p>
       <h3>2.2 自动收集的信息</h3>
-      <p><strong>设备广告标识符（IDFA / Advertising ID）</strong><br>仅在您允许的情况下（见第5节），Google AdMob 会读取您设备的广告标识符，并与 Google 及其广告合作伙伴共享，以便对广告进行个性化和效果衡量。如您不允许，广告将以非个性化方式展示。该标识符由您的操作系统分配，可重置且非永久。Pro 和 Founder 用户不会看到广告，也不会被请求此权限。</p>
+      <p><strong>设备广告标识符（IDFA / Advertising ID）</strong><br>在允许的情况下（见第5节），Google AdMob 会读取您设备的广告标识符，并与 Google 及其广告合作伙伴共享，以便对广告进行个性化和效果衡量。在 iOS 上需要您的许可；在欧洲经济区、英国和瑞士需要您的同意；在其他地区的 Android 设备上，您可以在设备设置中选择退出。否则，广告将以非个性化方式展示。该标识符由您的操作系统分配，可重置且非永久。Pro 和 Founder 用户不会看到广告，也不会被请求此权限。</p>
       <p><strong>IP地址和大致位置</strong><br>在应用发出网络请求时，由我们的云基础设施（Firebase/Google）和 Google AdMob 自动收集。AdMob 可能根据您的 IP 地址推断大致位置（如国家或城市）。用于基本服务运行和区域广告投放。</p>
       <p><strong>应用使用数据</strong><br>Firebase收集匿名使用数据（如访问的页面、崩溃报告）。这些数据与您的身份无关。</p>
       <p><strong>设备信息和广告互动数据</strong><br>展示广告时，Google AdMob 会收到设备和应用信息（如设备型号、操作系统版本、应用版本、语言）以及广告互动数据（如广告展示和点击）。</p>
@@ -1101,7 +1117,7 @@
       <h2>3. 我们如何使用您的信息</h2>
       <table>
         <tr><th>数据</th><th>用途</th></tr>
-        <tr><td>广告标识符（IDFA / Advertising ID），仅在您允许时</td><td>投放和衡量个性化广告</td></tr>
+        <tr><td>广告标识符（IDFA / Advertising ID），在允许的情况下（见第5节）</td><td>投放和衡量个性化广告</td></tr>
         <tr><td>设备和应用信息、大致位置（来自IP）、广告互动</td><td>广告投放和效果衡量</td></tr>
         <tr><td>IP地址</td><td>服务提供、区域内容</td></tr>
         <tr><td>匿名设备UID</td><td>存储关注列表偏好</td></tr>
@@ -1110,12 +1126,12 @@
         <tr><td>FCM令牌</td><td>关注列表推送通知</td></tr>
         <tr><td>购买状态</td><td>解锁高级功能、移除广告</td></tr>
       </table>
-      <p>我们不会为金钱将您的信息出售给第三方。如您允许个性化广告，您的广告标识符及相关数据将与 Google 及其广告合作伙伴共享；根据美国某些州的隐私法，这可能被视为用于定向广告的“共享”（sharing）（见第9节）。</p>
+      <p>我们不会为金钱将您的信息出售给第三方。广告个性化时，您的广告标识符及相关数据将与 Google 及其广告合作伙伴共享；根据美国某些州的隐私法，这可能被视为用于定向广告的“共享”（sharing）（见第9节）。</p>
       <h2>4. 第三方服务</h2>
       <h3>Google Firebase</h3>
       <p>用于匿名身份验证、云数据库、通知和分析。<br>隐私政策: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
       <h3>Google AdMob</h3>
-      <p>在应用内展示广告。AdMob 会收集您的 IP 地址（及据此推断的大致位置）、设备和应用信息以及广告互动数据。如您允许，AdMob 还会收集您设备的广告标识符，并与 Google 及其广告合作伙伴共享，用于个性化广告。<br>Google 如何使用这些信息: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>隐私政策: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <p>在应用内展示广告。AdMob 会收集您的 IP 地址（及据此推断的大致位置）、设备和应用信息以及广告互动数据。在允许的情况下（见第5节），AdMob 还会收集您设备的广告标识符，并与 Google 及其广告合作伙伴共享，用于个性化广告。<br>Google 如何使用这些信息: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a><br>隐私政策: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
       <h3>PostHog</h3>
       <p>用于产品分析（美国云）。PostHog 接收与您的匿名 Firebase 用户 ID 相关联的产品使用事件，不接收您的广告标识符。<br>隐私政策: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a></p>
       <h3>RevenueCat</h3>
@@ -1125,7 +1141,7 @@
       <h3>Apple (App Store / StoreKit)</h3>
       <p>所有购买均由Apple处理。<br>隐私政策: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
       <h2>5. 广告、同意与应用跟踪透明度</h2>
-      <p>默认情况下，Military Atlas 中的广告为<strong>非个性化</strong>广告。仅在您按下述方式授予许可后，广告才会个性化。非个性化广告仍会根据有限的信息（如大致位置和应用内容）进行选择，Google 可能将数据用于广告效果衡量和防止欺诈。</p>
+      <p>在法律和您的选择允许的情况下，Military Atlas 通过 Google AdMob 展示<strong>个性化广告</strong>：在 iOS 上仅在您允许跟踪时，在欧洲经济区、英国和瑞士仅在您同意时，在其他地区的 Android 设备上除非您在设备设置中选择退出。非个性化广告仍会根据有限的信息（如大致位置和应用内容）进行选择，Google 可能将数据用于广告效果衡量和防止欺诈。</p>
       <h3>iOS：应用跟踪透明度</h3>
       <p>在<strong>iOS 14.5及以上版本</strong>，我们依据Apple的ATT框架请求许可：</p>
       <blockquote>「Military Atlas希望获得您的许可，以在其他公司的App和网站中跟踪您。」</blockquote>
@@ -1134,10 +1150,12 @@
         <li><strong>拒绝跟踪：</strong>您仍会看到广告，但广告不会个性化。</li>
       </ul>
       <p>更改此设置：<strong>iOS设置 → 隐私与安全 → 跟踪 → Military Atlas</strong></p>
+      <h3>Android</h3>
+      <p>在欧洲经济区、英国和瑞士以外，Android 上的广告可能会使用您的 Android 广告 ID 进行个性化，应用内不会另行弹出请求。您可随时在<strong>Android 设置 → 隐私 → 广告</strong>中选择退出广告个性化或删除广告 ID（具体路径可能因设备而异）。</p>
       <h3>欧洲经济区、英国和瑞士</h3>
       <p>如果您位于欧洲经济区、英国或瑞士，您将看到 Google 的同意表单（基于 IAB Transparency &amp; Consent Framework 的 Google User Messaging Platform）。如您不同意，将仅展示非个性化或有限的广告。</p>
       <h3>更改您的选择</h3>
-      <p>您可随时在应用的<strong>设置 → 广告隐私偏好</strong>中查看或更改广告隐私选择，在 iOS 上也可在<strong>iOS 设置 → 隐私与安全性 → 跟踪</strong>中更改。</p>
+      <p>在欧洲经济区、英国和瑞士，您可随时在应用的<strong>设置 → 广告隐私设置</strong>中查看或更改您的同意。在 iOS 上可在<strong>iOS 设置 → 隐私与安全性 → 跟踪</strong>中更改跟踪设置；在 Android 上可在<strong>Android 设置 → 隐私 → 广告</strong>中更改。</p>
       <p><strong>Pro 和 Founder 用户</strong>不会看到广告，也不会被请求这些权限。</p>
       <h2>6. 数据保留</h2>
       <table>
@@ -1159,21 +1177,21 @@
         <li><strong>访问：</strong>请求我们持有的数据副本</li>
         <li><strong>删除：</strong>请求删除您的匿名数据</li>
         <li><strong>可携带：</strong>以可携带格式请求您的数据</li>
-        <li><strong>撤回同意：</strong>可随时在设置 → 广告隐私偏好中撤回或更改广告同意（见第5节）</li>
+        <li><strong>撤回同意：</strong>可随时在设置 → 广告隐私设置中撤回或更改广告同意（见第5节）</li>
         <li><strong>投诉：</strong>向当地数据保护机构提出投诉</li>
       </ul>
       <h3>加利福尼亚州（CCPA）</h3>
       <ul>
         <li>了解收集的个人信息及其使用方式</li>
         <li>请求删除个人信息</li>
-        <li>拒绝个人信息的“出售”或“共享”。我们不会为金钱出售个人信息。但如您允许个性化广告，将您的广告标识符及相关数据与 Google 及其广告合作伙伴共享，根据加利福尼亚州及美国其他一些州的法律，可能被视为用于跨情境行为（定向）广告的“共享”。如需拒绝，请在 iOS 设置 → 隐私与安全性 → 跟踪中拒绝或关闭跟踪，或在应用的设置 → 广告隐私偏好中更改您的选择。</li>
+        <li>拒绝个人信息的“出售”或“共享”。我们不会为金钱出售个人信息。但广告个性化时，将您的广告标识符及相关数据与 Google 及其广告合作伙伴共享，根据加利福尼亚州及美国其他一些州的法律，可能被视为用于跨情境行为（定向）广告的“共享”。如需拒绝，请在 iOS 设置 → 隐私与安全性 → 跟踪中拒绝或关闭跟踪，或在 Android 设置 → 隐私 → 广告中选择退出广告个性化或删除广告 ID。</li>
       </ul>
       <h3>所有用户</h3>
       <ul>
         <li><strong>应用内删除数据：</strong>设置 → 账户 → 删除我的数据</li>
         <li><strong>重置广告ID：</strong>iOS设置 → 隐私与安全 → 跟踪</li>
         <li><strong>通过邮件请求删除：</strong>联系下方邮箱</li>
-        <li><strong>广告隐私偏好：</strong>应用内的设置 → 广告隐私偏好</li>
+        <li><strong>广告隐私选择：</strong>iOS 设置 → 隐私与安全性 → 跟踪；Android 设置 → 隐私 → 广告；在欧洲经济区、英国和瑞士，还可使用应用内的设置 → 广告隐私设置</li>
       </ul>
       <h2>10. 账户与数据删除</h2>
       <p>Military Atlas在首次启动时创建匿名账户。您可随时删除您的数据。</p>
